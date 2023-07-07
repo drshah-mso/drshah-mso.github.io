@@ -199,11 +199,22 @@
                 </div>  
                 <nav id="left-sidebar-nav" class="sidebar-nav">
                     <ul id="main-menu" class="metismenu animation-li-delay">
-                        <li class><a href="index.html"><i class="fa fa-dashboard"></i> <span>Utama</span></a></li>
-                        <li class="active"><a href="permohonan.html"><i class="fa fa-files-o"></i> <span>Permohonan</span></a></li>
-                        <li class><a href="tuntutan.html"><i class="fa fa-money"></i> <span>Tuntutan</span></a></li>
-                        <li class><a href="laporan.html"><i class="fa fa-list-alt"></i> <span>Laporan</span></a></li>
-                        <li class><a href="tetapan.html"><i class="fa fa-cogs"></i> <span>Tetapan</span></a></li>
+                        <li class="header">Halaman</li>
+                        <li><a href="index.html"><i class="fa fa-dashboard"></i> <span>Utama</span></a></li>
+                        <li class="header">Permohonan</li>
+                        <li class="active"><a href="permohonan.html"><i class="fa fa-files-o"></i> <span>Status Permohonan</span></a></li>
+                        <li><a href="saring-permohonan.html"><i class="fa fa-folder-o"></i> <span>Saring Permohonan</span></a></li>
+                        <li><a href="sahkan-permohonan.html"><i class="fa fa-check-circle-o"></i> <span>Pengesahan Permohonan</span></a></li>
+                        <li><a href="kembali-permohonan.html"><i class="fa fa-mail-reply"></i> <span>Kembalikan Permohonan</span></a></li>
+                        <li class="header">Tuntutan</li>
+                        <li><a href="tuntutan.html"><i class="fa fa-money"></i> <span>Status Tuntutan</span></a></li>
+                        <li><a href="saring-tuntutan.html"><i class="fa fa-money"></i> <span>Saring Tuntutan</span></a></li>
+                        <li><a href="sahkan-tuntutan.html"><i class="fa fa-money"></i> <span>Pengesahan Tuntutan</span></a></li>
+                        <li><a href="kembali-tuntutan.html"><i class="fa fa-money"></i> <span>Kembalikan Tuntutan</span></a></li>
+                        <li class="header">Laporan</li>
+                        <li><a href="laporan.html"><i class="fa fa-list-alt"></i> <span>Laporan</span></a></li>
+                        <li class="header">Tetapan</li>
+                        <li><a href="tetapan.html"><i class="fa fa-cogs"></i> <span>Tetapan</span></a></li>
                     </ul>
                 </nav>    
             </div>
@@ -231,10 +242,10 @@
                                         <div class="col-lg-3 col-md-6">
                                             <div class="card border-dark">
                                                 <div class="card-body top_counter">
-                                                    <div class="icon bg-warning text-white"><i class="fa fa-pencil-square-o"></i> </div>
+                                                    <div class="icon bg-warning text-white"><i class="fa fa-group"></i> </div>
                                                     <div class="content">
-                                                        <span>Draf </span>
-                                                        <h5 class="number mb-0">0</h5>
+                                                        <span>Jumlah Keseluruhan Pemohon</span>
+                                                        <h5 class="number mb-0">1200</h5>
                                                     </div>
                                                 </div>                        
                                             </div>
@@ -243,10 +254,10 @@
                                         <div class="col-lg-3 col-md-6">
                                             <div class="card">
                                                 <div class="card-body top_counter">
-                                                    <div class="icon bg-success text-white"><a href="permohonan.html"></a><i class="fa fa-paper-plane-o"></i></a> </div>
+                                                    <div class="icon bg-info text-white"><a href="permohonan.html"></a><i class="fa fa-user"></i></a> </div>
                                                     <div class="content">
-                                                        <span>Baru</span>
-                                                        <h5 class="number mb-0">1</h5>
+                                                        <span>Jumlah Pemohon (IPTA) </span>
+                                                        <h5 class="number mb-0">900</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -254,10 +265,10 @@
                                         <div class="col-lg-3 col-md-6">
                                             <div class="card">
                                                 <div class="card-body top_counter">
-                                                    <div class="icon bg-info text-white"><i class="fa fa-spinner"></i> </div>
+                                                    <div class="icon bg-info text-white"><i class="fa fa-user"></i> </div>
                                                     <div class="content">
-                                                        <span>Sedang Diproses</span>
-                                                        <h5 class="number mb-0">0</h5>
+                                                        <span>Jumlah Pemohon (Politeknik)</span>
+                                                        <h5 class="number mb-0">150</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -265,19 +276,119 @@
                                         <div class="col-lg-3 col-md-6">
                                             <div class="card">
                                                 <div class="card-body top_counter">
-                                                    <div class="icon bg-danger text-white"><i class="fa fa-check-square-o"></i> </div>
+                                                    <div class="icon bg-info text-white"><i class="fa fa-user"></i> </div>
                                                     <div class="content">
-                                                        <span>Selesai</span>
-                                                        <h5 class="number mb-0">0</h5>
+                                                        <span>Jumlah Pemohon (Kolej Komuniti)</span>
+                                                        <h5 class="number mb-0">150</h5>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>              
+                                        </div>  
+                                          
                                 </div>
+                                <div class="row clearfix">
+                                   
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card border-dark">
+                                            <div class="card-body top_counter">
+                                                <div class="icon bg-warning text-white"><i class="fa fa-pencil-square-o"></i> </div>
+                                                <div class="content">
+                                                    <span>Draf </span>
+                                                    <h5 class="number mb-0">0</h5>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body top_counter">
+                                                <div class="icon bg-success text-white"><a href="permohonan.html"></a><i class="fa fa-paper-plane-o"></i></a> </div>
+                                                <div class="content">
+                                                    <span>Baru</span>
+                                                    <h5 class="number mb-0">1</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body top_counter">
+                                                <div class="icon bg-info text-white"><i class="fa fa-spinner"></i> </div>
+                                                <div class="content">
+                                                    <span>Dalam Proses</span>
+                                                    <h5 class="number mb-0">0</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body top_counter">
+                                                <div class="icon bg-danger text-white"><i class="fa fa-check-square-o"></i> </div>
+                                                <div class="content">
+                                                    <span>Tamat</span>
+                                                    <h5 class="number mb-0">0</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                      
+                            </div>
+                            <div class="row clearfix">
+                                   
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card border-dark">
+                                        <div class="card-body top_counter">
+                                            <div class="icon bg-warning text-white"><i class="fa fa-pencil-square-o"></i> </div>
+                                            <div class="content">
+                                                <span>Layak </span>
+                                                <h5 class="number mb-0">0</h5>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                </div>
+                    
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body top_counter">
+                                            <div class="icon bg-success text-white"><a href="permohonan.html"></a><i class="fa fa-paper-plane-o"></i></a> </div>
+                                            <div class="content">
+                                                <span>Tidak Layak</span>
+                                                <h5 class="number mb-0">1</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body top_counter">
+                                            <div class="icon bg-info text-white"><i class="fa fa-spinner"></i> </div>
+                                            <div class="content">
+                                                <span>Aktif</span>
+                                                <h5 class="number mb-0">0</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body top_counter">
+                                            <div class="icon bg-danger text-white"><i class="fa fa-check-square-o"></i> </div>
+                                            <div class="content">
+                                                <span>Tidak Aktif</span>
+                                                <h5 class="number mb-0">0</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                  
+                        </div>
                             </div>
                         </div>
                     </div>
                 </div> 
+                
                 <div class="row clearfix">
                     <div class="col-lg-12">
                         <div class="card">
@@ -337,6 +448,7 @@
                         </div>
                     </div>
                 </div> 
+                
 
                 <div class="row clearfix">
                     <div class="col-12">
@@ -347,7 +459,7 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item vivify swoopInTop delay-150 active"><a class="nav-link" href="pemohon-detail.html">Senarai Permohonan</a></li>
+                                    <li class="nav-item vivify swoopInTop delay-150 active"><a class="nav-link" href="page-invoices.html">Senarai Permohonan</a></li>
                                     <!--<li class="nav-item vivify swoopInTop delay-250"><a class="nav-link" href="#">Scheduled</a></li>
                                     <li class="nav-item vivify swoopInTop delay-350"><a class="nav-link" href="#">Prepayment</a></li>
                                     <li class="nav-item vivify swoopInTop delay-350"><a class="nav-link" href="#">Reminders</a></li>-->
@@ -368,10 +480,10 @@
                                         <thead>
                                             <tr> 
                                                 <th style="width: 20px;">Bil</th>
-                                                <th>Senarai Pemohon</th>
-                                                <th style="width: 120px;">Jenis Permohonan</th>
-                                                <th style="width: 80px;">Status Permohonan</th>
-                                                <th style="width: 100px;">Tindakan</th>
+                                                <th>Nama Pemohon</th>
+                                                <th>Jenis Permohonan</th>
+                                                <th>Kod Permohonan</th>  
+                                                <th>Status Permohonan</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -383,16 +495,16 @@
                                                     <div class="d-flex align-items-center">
                                                         <img src="assets/images/user.png" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
                                                         <div class="ml-3">
-                                                            <a href="pemohon-detail.html" title="">Ali Bin Abu</a>
-                                                            <p class="mb-0">alibinabu@graduate.utm.my</p>
+                                                            <p>Ali Bin Abu</p>
+                                                         
+                                                           
                                                         </div>
                                                     </div>                                        
                                                 </td>
-                                                <td>BKOKU</td>
-                                                <td><span class="badge badge-success ml-0 mr-0">Baru!</span></td>
+                                                <td> BKOKU</td>
+                                                <td><a href="maklumat-pemohon.html" title="">SARJANABKOKU000011</a></td>
                                                 <td>
-                                                    <button type="button" class="btn btn-sm btn-default "title="Print"><i class="fa fa-eye"></i></button>
-                                                    <button type="button" class="btn btn-sm btn-default" title="Delete"><i class="fa fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-danger"> Gagal Permohonan</button>   
                                                 </td>
                                             </tr>
                                             <tr>
@@ -401,18 +513,18 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
-                                                        <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
+                                                        <img src="assets/images/user.png" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
                                                         <div class="ml-3">
-                                                            <a href="pemohon-detail.html" title="">Zoe Baker</a>
-                                                            <p class="mb-0">zoe.baker@um.student.my</p>
+                                                            <p>Ramli Bin Nasir</p>
+                                                         
+                                                           
                                                         </div>
                                                     </div>                                        
                                                 </td>
                                                 <td>PPK</td>
-                                                <td><span class="badge badge-success ml-0 mr-0">BARU!</span></td>
+                                                <td><a href="maklumat-pemohon.html" title="">SARJANAPPK000011</a></td>
                                                 <td>
-                                                    <button type="button" class="btn btn-sm btn-default "title="Print"><i class="fa fa-eye"></i></button>
-                                                    <button type="button" class="btn btn-sm btn-default" title="Delete"><i class="fa fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-success"> Lulus Permohonan</button>   
                                                 </td>
                                             </tr>
                                             <tr>
@@ -421,18 +533,18 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
-                                                        <img src="assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
+                                                        <img src="assets/images/user.png" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
                                                         <div class="ml-3">
-                                                            <a href="page-invoices-detail.html" title="">Sarah Binti Hashim</a>
-                                                            <p class="mb-0">h.sarah@uitm.edu.com.my</p>
+                                                            <p>Hashim Bin Mukriz</p>
+                                                         
+                                                           
                                                         </div>
                                                     </div>                                        
                                                 </td>
-                                                <td>PPK</td>
-                                                <td><span class="badge badge-success ml-0 mr-0">BARU!</span></td>
+                                                <td> BKOKU</td>
+                                                <td><a href="maklumat-pemohon.html" title="">DIPLOMAPPK00011</a></td>
                                                 <td>
-                                                    <button type="button" class="btn btn-sm btn-default "title="Print"><i class="fa fa-eye"></i></button>
-                                                    <button type="button" class="btn btn-sm btn-default" title="Delete"><i class="fa fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-warning"> Sedang Diproses</button>   
                                                 </td>
                                             </tr>
                                             <tr>
@@ -441,18 +553,18 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
-                                                        <img src="assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
+                                                        <img src="assets/images/user.png" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
                                                         <div class="ml-3">
-                                                            <a href="pemohon2-detail.html" title="">Akmal Bin Mahmod</a>
-                                                            <p class="mb-0">Akmalbinmahmod@usm.edu.com.my</p>
+                                                            <p>Ganesh A/L Hariyaran</p>
+                                                         
+                                                           
                                                         </div>
-                                                    </div>
+                                                    </div>                                        
                                                 </td>
-                                                <td>PPK</td>
-                                                <td><span class="badge badge-success ml-0 mr-0">Baru</span></td>
+                                                <td> PPK</td>
+                                                <td><a href="maklumat-pemohon.html" title="">SARJANAPPK00211</a></td>
                                                 <td>
-                                                    <button type="button" class="btn btn-sm btn-default "title="Print"><i class="fa fa-eye"></i></button>
-                                                    <button type="button" class="btn btn-sm btn-default" title="Delete"><i class="fa fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-primary"> Permohonan Dikembalikan</button>   
                                                 </td>
                                             </tr>
                                         </tbody>
