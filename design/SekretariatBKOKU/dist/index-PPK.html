@@ -14,13 +14,13 @@
 <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/vendor/animate-css/vivify.min.css">
+<link rel="stylesheet" href="assets/vendor/c3/c3.min.css"/>
 
 <link rel="stylesheet" href="assets/vendor/chartist/css/chartist.min.css">
 <link rel="stylesheet" href="assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
 <link rel="stylesheet" href="assets/vendor/c3/c3.min.css"/>
 <link rel="stylesheet" href="assets/vendor/toastr/toastr.min.css">
 <link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
-
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="assets/css/mooli.min.css">
 
@@ -32,7 +32,7 @@
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="m-t-30"><img src="assets/images/icon.svg" width="40" height="40" alt="Mooli"></div>
-            <p>Please wait...</p>        
+            <p>Sedang Diproses...</p>        
         </div>
     </div>
 
@@ -208,9 +208,9 @@
                         <li><a href="kembali-permohonan.html"><i class="fa fa-mail-reply"></i> <span>Kembalikan Permohonan</span></a></li>
                         <li class="header">Tuntutan</li>
                         <li><a href="tuntutan.html"><i class="fa fa-money"></i> <span>Status Tuntutan</span></a></li>
-                        <li><a href="saring-tuntutan.html"><i class="fa fa-money"></i> <span>Saring Tuntutan</span></a></li>
-                        <li><a href="sahkan-tuntutan.html"><i class="fa fa-money"></i> <span>Pengesahan Tuntutan</span></a></li>
-                        <li><a href="kembali-tuntutan.html"><i class="fa fa-money"></i> <span>Kembalikan Tuntutan</span></a></li>
+                        <li><a href="saring-tuntutan.html"><i class="fa fa-file-o"></i> <span>Saring Tuntutan</span></a></li>
+                        <li><a href="sahkan-tuntutan.html"><i class="fa fa-check-square"></i> <span>Pengesahan Tuntutan</span></a></li>
+                        <li><a href="kembali-tuntutan.html"><i class="fa fa-mail-reply-all"></i> <span>Kembalikan Tuntutan</span></a></li>
                         <li class="header">Laporan</li>
                         <li><a href="laporan.html"><i class="fa fa-list-alt"></i> <span>Laporan</span></a></li>
                         <li class="header">Tetapan</li>
@@ -301,6 +301,135 @@
                 </div>
                 <div class="row clearfix">
                     <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light page_menu">
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item vivify swoopInTop delay-150 "><a class="nav-link" href="index.html">BKOKU</a></li>
+                                    <li class="nav-item vivify swoopInTop delay-250 active"><a class="nav-link" href="index-PPK.html">PPK</a></li>
+                                </ul>
+                                <div class="ml-auto">
+                                    <a href="app-todo.html" class="btn btn-default">ToDo</a>
+                                    <a href="setting.html" class="btn btn-default">Settings</a>
+                                    <a href="javascript:void(0);" target="_blank" class="btn btn-dark">Buy this item</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-12">
+                        <div class="card theme-bg gradient">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div id="slider1" class="carousel vert slide" data-ride="carousel" data-interval="2700">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item">
+                                                            <div>Total Revenue</div>
+                                                            <div class="mt-3 h1">$9,452</div>
+                                                            <div class="d-flex">
+                                                                <div class="mr-3">0.85% <i class="fa fa-caret-up"></i></div>
+                                                                <span>This year</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div>Total Expense</div>
+                                                            <div class="mt-3 h1">$4,124</div>
+                                                            <div class="d-flex">
+                                                                <div class="mr-3">2.04% <i class="fa fa-caret-down"></i></div>
+                                                                <span>This year</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div id="slider2" class="carousel vert slide" data-ride="carousel" data-interval="2800">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div>Total User</div>
+                                                            <div class="mt-3 h1">1,258</div>
+                                                            <div class="d-flex">
+                                                                <div class="mr-3">7% <i class="fa fa-caret-up"></i></div>
+                                                                <span>This month</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div>Sessions</div>
+                                                            <div class="mt-3 h1">451</div>
+                                                            <div class="d-flex">
+                                                                <div class="mr-3">23.5% <i class="fa fa-caret-up"></i></div>
+                                                                <span>This month</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div id="slider3" class="carousel vert slide" data-ride="carousel" data-interval="3000">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div>Bitcoin Wallet</div>
+                                                            <div class="mt-3 h1">4.25762</div>
+                                                            <div class="d-flex">
+                                                                <div class="mr-3">5.23% <i class="fa fa-caret-up"></i></div>
+                                                                <span>This Week</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div>Ethereum Wallet</div>
+                                                            <div class="mt-3 h1">3.15948</div>
+                                                            <div class="d-flex">
+                                                                <div class="mr-3">1.85% <i class="fa fa-caret-up"></i></div>
+                                                                <span>This Week</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div id="slider4" class="carousel vert slide" data-ride="carousel" data-interval="2500">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div>Number of Meetings</div>
+                                                            <div class="mt-3 h1">781</div>
+                                                            <div class="d-flex">
+                                                                <div class="mr-3">0.56% <i class="fa fa-caret-up"></i></div>
+                                                                <span>(30 days)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div>Number of Clients</div>
+                                                            <div class="mt-3 h1">10K</div>
+                                                            <div class="d-flex">
+                                                                <div class="mr-3">0.56% <i class="fa fa-caret-up"></i></div>
+                                                                <span>(30 days)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-12">
                         <div class="card">
                             <div class="header">
                                 <h2>Jenis Permohonan</h2>
@@ -308,31 +437,33 @@
                             <div class="body">
                                 <ul class="nav nav-tabs">
                                     <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#Home-withicon"><i class="fa fa-file"></i> BKOKU</a></li>
-                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Profile-withicon"><i class="fa fa-file-text"></i> PPK</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="index-PPK.html"><i class="fa fa-file-text"></i> PPK</a></li>
                                     <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Contact-withicon"><i class="fa fa-vcard"></i> Contact</a></li>-->
                                 </ul>
                                 <div class="tab-content">
                                     <div class="tab-pane show active" id="Home-withicon">
                                         <h6>Permohonan BKOKU</h6>
                                         <div class="row clearfix">
+                                   
                                             <div class="col-lg-3 col-md-6">
                                                 <div class="card border-dark">
                                                     <div class="card-body top_counter">
-                                                        <div class="icon bg-warning text-white"><i class="fa fa-pencil-square-o"></i> </div>
+                                                        <div class="icon bg-warning text-white"><i class="fa fa-group"></i> </div>
                                                         <div class="content">
-                                                            <span>Draf </span>
-                                                            <h5 class="number mb-0">0</h5>
+                                                            <span>Jumlah Keseluruhan Pemohon</span>
+                                                            <h5 class="number mb-0">1200</h5>
                                                         </div>
                                                     </div>                        
                                                 </div>
                                             </div>
+                                
                                             <div class="col-lg-3 col-md-6">
                                                 <div class="card">
                                                     <div class="card-body top_counter">
-                                                        <div class="icon bg-success text-white"><a href="permohonan.html"></a><i class="fa fa-paper-plane-o"></i></a> </div>
+                                                        <div class="icon bg-info text-white"><a href="permohonan.html"></a><i class="fa fa-user"></i></a> </div>
                                                         <div class="content">
-                                                            <span>Baru</span>
-                                                            <h5 class="number mb-0">1</h5>
+                                                            <span>Jumlah Pemohon (IPTA) </span>
+                                                            <h5 class="number mb-0">900</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -340,10 +471,10 @@
                                             <div class="col-lg-3 col-md-6">
                                                 <div class="card">
                                                     <div class="card-body top_counter">
-                                                        <div class="icon bg-info text-white"><i class="fa fa-spinner"></i> </div>
+                                                        <div class="icon bg-info text-white"><i class="fa fa-user"></i> </div>
                                                         <div class="content">
-                                                            <span>Sedang Diproses</span>
-                                                            <h5 class="number mb-0">0</h5>
+                                                            <span>Jumlah Pemohon (Politeknik)</span>
+                                                            <h5 class="number mb-0">150</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -351,16 +482,114 @@
                                             <div class="col-lg-3 col-md-6">
                                                 <div class="card">
                                                     <div class="card-body top_counter">
-                                                        <div class="icon bg-danger text-white"><i class="fa fa-check-square-o"></i> </div>
+                                                        <div class="icon bg-info text-white"><i class="fa fa-user"></i> </div>
                                                         <div class="content">
-                                                            <span>Selesai</span>
-                                                            <h5 class="number mb-0">0</h5>
+                                                            <span>Jumlah Pemohon (Kolej Komuniti)</span>
+                                                            <h5 class="number mb-0">150</h5>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                              
+                                    </div>
+                                    <div class="row clearfix">
+                                       
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="card border-dark">
+                                                <div class="card-body top_counter">
+                                                    <div class="icon bg-warning text-white"><i class="fa fa-pencil-square-o"></i> </div>
+                                                    <div class="content">
+                                                        <span>Draf </span>
+                                                        <h5 class="number mb-0">0</h5>
+                                                    </div>
+                                                </div>                        
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="card">
+                                                <div class="card-body top_counter">
+                                                    <div class="icon bg-success text-white"><a href="permohonan.html"></a><i class="fa fa-paper-plane-o"></i></a> </div>
+                                                    <div class="content">
+                                                        <span>Baru</span>
+                                                        <h5 class="number mb-0">1</h5>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="card">
+                                                <div class="card-body top_counter">
+                                                    <div class="icon bg-info text-white"><i class="fa fa-spinner"></i> </div>
+                                                    <div class="content">
+                                                        <span>Dalam Proses</span>
+                                                        <h5 class="number mb-0">0</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="card">
+                                                <div class="card-body top_counter">
+                                                    <div class="icon bg-danger text-white"><i class="fa fa-check-square-o"></i> </div>
+                                                    <div class="content">
+                                                        <span>Tamat</span>
+                                                        <h5 class="number mb-0">0</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                          
+                                </div>
+                                <div class="row clearfix">
+                                       
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card border-dark">
+                                            <div class="card-body top_counter">
+                                                <div class="icon bg-warning text-white"><i class="fa fa-pencil-square-o"></i> </div>
+                                                <div class="content">
+                                                    <span>Layak </span>
+                                                    <h5 class="number mb-0">0</h5>
+                                                </div>
+                                            </div>                        
+                                        </div>
                                     </div>
+                        
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body top_counter">
+                                                <div class="icon bg-success text-white"><a href="permohonan.html"></a><i class="fa fa-paper-plane-o"></i></a> </div>
+                                                <div class="content">
+                                                    <span>Tidak Layak</span>
+                                                    <h5 class="number mb-0">1</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body top_counter">
+                                                <div class="icon bg-info text-white"><i class="fa fa-spinner"></i> </div>
+                                                <div class="content">
+                                                    <span>Aktif</span>
+                                                    <h5 class="number mb-0">0</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body top_counter">
+                                                <div class="icon bg-danger text-white"><i class="fa fa-check-square-o"></i> </div>
+                                                <div class="content">
+                                                    <span>Tidak Aktif</span>
+                                                    <h5 class="number mb-0">0</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                 </div>
+                             </div>     
                                     <div class="tab-pane" id="Profile-withicon">
                                         <h6>Permohonan PPK</h6>
                                         <div class="row clearfix">
@@ -410,16 +639,84 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                   
                 </div>
-                
+                <div class="row clearfix">
+                    <div class=" col-lg-6 col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>Simple Donut</h2>
+                    </div>
+                    <div class="body">
+                        <div id="apex-simple-donut"></div>
+                    </div>
+                </div>
+                    </div>
              
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Area Chart</h2>
+                            <ul class="header-dropdown dropdown">
+                                
+                                <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu theme-bg gradient">
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div id="area-chart" class="ct-chart"></div>
+                        </div>
+                    </div>
+                </div>
+           
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>Stacked Bar Chart</h2>
+                    </div>
+                    <div class="body">
+                        <div id="chart-bar-stacked" style="height: 300px"></div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="row clearfix">
+        <div class="col-lg-4 col-md-12">
+        <div class="card">
+            <div class="header">
+                <h2>Donut Chart</h2>
+            </div>
+            <div class="body">
+                <div id="chart-donut" style="height: 300px"></div>
+            </div>
+        </div>
+         
+            </div>
+            <div class="col-lg-4 col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h2>Pie Chart</h2>
+                </div>
+                <div class="body">
+                    <div id="chart-pie" style="height: 300px"></div>
+                </div>
+            </div>
+            </div> 
+           </div>
         </div>
         
     </div>
@@ -430,14 +727,28 @@
 <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
 <!-- Vedor js file and create bundle with grunt  --> 
-<script src="assets/bundles/flotscripts.bundle.js"></script><!-- flot charts Plugin Js -->
+
 <script src="assets/bundles/c3.bundle.js"></script>
 <script src="assets/bundles/apexcharts.bundle.js"></script>
 <script src="assets/bundles/jvectormap.bundle.js"></script>
+<script src="assets/bundles/flotscripts.bundle.js"></script><!-- flot charts Plugin Js --> 
 <script src="assets/vendor/toastr/toastr.js"></script>
+<script src="assets/bundles/chartist.bundle.js"></script>
+
+
+<script src="assets/vendor/flot-charts/jquery.flot.time.js"></script>
+<script src="assets/vendor/flot-charts/jquery.flot.selection.js"></script>
+
 
 <!-- Project core js file minify with grunt --> 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
+
+
+<!-- Vedor js file and create bundle with grunt  --> 
+<script src="../js/pages/charts/apex.js"></script>
+<script src="../js/pages/charts/chartjs.js"></script>
+<script src="../js/pages/charts/flot.js"></script>
+<script src="../js/pages/charts/c3.js"></script>
 <script src="../js/index.js"></script>
 </body>
 </html>
