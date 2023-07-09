@@ -468,8 +468,8 @@ c3.generate({
     data: {
         columns: [
             // each columns data
-            ['data1', 63],
-            ['data2', 37]
+            ['data1', 60],
+            ['data2', 40]
         ],
         type: 'donut', // default type of chart
         colors: {
