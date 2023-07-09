@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="assets/vendor/c3/c3.min.css"/>
 <link rel="stylesheet" href="assets/vendor/toastr/toastr.min.css">
 <link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
-
+<link rel="stylesheet" href="assets/vendor/morrisjs/morris.css" />
 <link rel="stylesheet" href="assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css">
 <link rel="stylesheet" href="assets/vendor/jquery-datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css">
 <link rel="stylesheet" href="assets/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css">
@@ -430,6 +430,30 @@
         <div id="main-content">
             <div class="container-fluid">
                 <!-- Page header section  -->
+                <div class="col-md-12 col-lg-6">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Donute Chart</h2>
+                            <ul class="header-dropdown dropdown">
+                                <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu theme-bg gradient">
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div id="m_donut_chart" class="m_chart"></div>
+                        </div>
+                    </div>               
+                </div>
                 <div class="block-header">
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-12 col-sm-12">
@@ -663,7 +687,11 @@
 <script src="assets/bundles/mainscripts.bundle.js"></script>
 <script src="../js/index.js"></script>
 
+<!-- Vedor js file and create bundle with grunt  --> 
+<script src="assets/bundles/morrisscripts.bundle.js"></script><!-- Morris Plugin Js -->
 
+
+<script src="../js/pages/charts/morris.js"></script>
 
 <!-- Vedor js file and create bundle with grunt  --> 
 

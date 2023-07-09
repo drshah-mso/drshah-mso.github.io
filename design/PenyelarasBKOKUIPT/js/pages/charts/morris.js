@@ -228,21 +228,30 @@ function MorrisDonutChart() {
         element: 'm_donut_chart',
         data: [
             {
-                label: "Online",
-                value: 40,
+                label: "Deraf",
+                value: 10,
             }, {
-                label: "Store",
-                value: 35
+                label: "Baru",
+                value: 20
+            },{
+                label: "Saringan",
+                value: 12
+            },{
+                label: "Disokong",
+                value: 15
             }, {
-                label: "Email",
+                label: "Dikembalikan",
+                value: 10
+            }, {
+                label: "Layak",
+                value: 25
+            }, {
+                label: "Tidak Layak",
                 value: 8
-            }, {
-                label: "Agent",
-                value: 17
             }],
 
         resize: true,
-        colors: ['#2c83b6', '#61bda1', '#a5d8a2', '#e0ef99'],
+        colors: ['#33faff', '#61bda1', '#ffff00', '#00ffff','#ffa500', '#0000ff','#ff0000'],
         backgroundColor: '#ffffff',
     });
 }
