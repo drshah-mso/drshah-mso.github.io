@@ -472,7 +472,8 @@ c3.generate({
             ['data2', 20],
             ['data3', 10],
             ['data4', 10],
-            ['data5', 40],
+            ['data5', 30],
+            ['data6', 10],
             ['data6', 10]
         ],
         type: 'donut', // default type of chart
@@ -482,16 +483,18 @@ c3.generate({
             'data3': '#daf7a6',
             'data4': '#ffc300',
             'data5': '#ff5733',
+            'data6': '#c70029',
             'data6': '#c70039',
         },
         names: {
             // name of each serie
-            'data1': 'Draf Permohonan',
-            'data2': 'Permohonan Baru',
-            'data3': 'Layak Memohon',
-            'data4': 'Tidak Layak Memohon',
-            'data5': 'Permohonan Aktif',
-            'data6': 'Permohonan Tidak Aktif'
+            'data1': 'Deraf',
+            'data2': 'Baru',
+            'data3': 'Saringan',
+            'data4': 'Disokong',
+            'data5': 'Dikembalikan',
+            'data6': 'Layak',
+            'data7': 'Tidak Layak'
 
         }
     },

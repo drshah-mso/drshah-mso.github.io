@@ -399,10 +399,30 @@
                     </div>
                 </div>-->
                 <div class="row clearfix">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <h2>Status Permohonan</h2>
+                          
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 text-lg-right">
+                            <button type="button" class="btn btn-default btn-filter" data-target="all">Semua</button>
+                            <button type="button" class="btn btn-light btn-filter" data-target="Deraf">Deraf</button>
+                            <button type="button" class="btn btn-info btn-filter" data-target="Saringan">Saringan</button>
+                            <button type="button" class="btn btn-secondary btn-filter" data-target="Disokong">Disokong</button>
+                            <button type="button" class="btn btn-success btn-filter" data-target="Layak">Layak</button>
+                            <button type="button" class="btn btn-danger btn-filter" data-target="Tidak Layak">Tidak Layak</button>
+                            <button type="button" class="btn btn-warning btn-filter" data-target="Dikembalikan">Dikembalikan</button>
+                            <button type="button" class="btn btn-success btn-filter" data-target="Aktif">Aktif</button>
+                            <button type="button" class="btn btn-danger btn-filter" data-target="Tidak Aktif">Tidak Aktif</button>
+                        
+                            
+                        </div>
+                    </div>
+                    <div class="row clearfix">
                     <div class="col-lg-12">
                         <div class="card bg-clear">
                             <div class="header">
-                                <h2>Table Filter</h2>
+                                <h2>Senarai Permohonan</h2>
+                                 
                                 <ul class="header-dropdown dropdown">
                                     <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
                                     <li class="dropdown">
@@ -419,113 +439,324 @@
                                 </ul>
                             </div>
                             <div class="body">
+                              
                                 <table class="table table-hover table-custom spacing5 mb-0">
+                                    <!--<thead>
+                                        <tr> 
+                                            <th>Nama Pemohon</th>
+                                            <th>Jenis Permohonan</th>
+                                            <th>ID Permohonan</th>  
+                                            <th>Status Permohonan</th>
+                                        </tr>
+                                    </thead>-->
+                                    <thead>
+                                        <tr> 
+                                            <th>Nama Pemohon</th>
+                                            <th>Jenis Permohonan</th>
+                                            <th>ID Permohonan</th>  
+                                            <th>Status Permohonan</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
-                                        <tr data-status="approved">
-                                            <td class="w60">
-                                                <img src="assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 ">
+                                        <tr data-status="Saringan">
+                                            <td>
+                                                Ali Bin Abu
                                             </td>
                                             <td>
-                                                <a href="#" title="">Project 1</a>
-                                                <p class="mb-0">Scott Ortega</p>
+                                                BKOKU
                                             </td>
                                             <td>
-                                                <span>Lorem Ipsum is dummy text of the and typesetting industry.</span>
+                                               SARJANABKOKU00012
                                             </td>
-                                            <td class="text-right">11,200</td>
-                                            <td class="text-right">$83</td>
-                                            <td class="text-right"><strong>$22,520</strong></td>
+                                            
+                                            <td>Saringan</td>
                                         </tr>
-                                        <tr data-status="suspended">
-                                            <td class="w60">
-                                                <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 ">
+                                        <tr data-status="Saringan">
+                                            <td>
+                                               Sarah Yunos
                                             </td>
                                             <td>
-                                                <a href="#" title="">Project 2</a>
-                                                <p class="mb-0">Louis Little</p>
+                                               PPK
                                             </td>
                                             <td>
-                                                <span>Lorem Ipsum is simply text of the printing and typesetting industry.</span>
+                                               DIPPPK01012
                                             </td>
-                                            <td class="text-right">119</td>
-                                            <td class="text-right">$66</td>
-                                            <td class="text-right"><strong>$135</strong></td>
+                                            
+                                            <td>Saringan</td>
                                         </tr>
-                                        <tr data-status="blocked">
-                                            <td class="w60">
-                                                <img src="assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 ">
+                                        <tr data-status="Saringan">
+                                            <td>
+                                              Eng Mei Ying
                                             </td>
                                             <td>
-                                                <a href="#" title="">Project 3</a>
-                                                <p class="mb-0">Mike</p>
-                                            </td>                                    
-                                            <td>
-                                                <span>Lorem is simply dummy text of the printing and typesetting industry.</span>
+                                                BKOKU
                                             </td>
-                                            <td class="text-right">12,111</td>
-                                            <td class="text-right">$93</td>
-                                            <td class="text-right"><strong>$17,700</strong></td>
+                                            <td>
+                                               PHDBKOKU30012
+                                            </td>
+                                            
+                                            <td>Saringan</td>
                                         </tr>
-                                        <tr data-status="approved">
-                                            <td class="w60">
-                                                <img src="assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 ">
+                                        
+                                        <tr data-status="Saringan">
+                                            <td>
+                                                Tan Yu Heng
                                             </td>
                                             <td>
-                                                <a href="#" title="">Project 4</a>
-                                                <p class="mb-0">Lori Kelley</p>
+                                                BKOKU
                                             </td>
                                             <td>
-                                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                                               SARJANAMUDABKOKU90012
                                             </td>
-                                            <td class="text-right">18,200</td>
-                                            <td class="text-right">$178</td>
-                                            <td class="text-right"><strong>$17,700</strong></td>
+                                            
+                                            <td>Saringan</td>
                                         </tr>
-                                        <tr data-status="pending">
-                                            <td class="w60">
-                                                <img src="assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 ">
+                                        
+                                        <tr data-status="Disokong">
+                                            <td>
+                                                Amirah Binti Akmal
                                             </td>
                                             <td>
-                                                <a href="#" title="">Project 5</a>
-                                                <p class="mb-0">David McCoy</p>
+                                                PPK
                                             </td>
                                             <td>
-                                                <span>Lorem Ipsum is simply dummy text of the printing and industry.</span>
+                                               DIPPPK80012
                                             </td>
-                                            <td class="text-right">12,315</td>
-                                            <td class="text-right">$93</td>
-                                            <td class="text-right"><strong>$1,700</strong></td>
+                                            
+                                            <td>Disokong</td>
                                         </tr>
-                                        <tr data-status="suspended">
-                                            <td class="w60">
-                                                <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 ">
+                                        
+                                        <tr data-status="Layak">
+                                            <td>
+                                               Puah Chu Er
                                             </td>
                                             <td>
-                                                <a href="#" title="">Project 2</a>
-                                                <p class="mb-0">Louis Little</p>
+                                                BKOKU
                                             </td>
                                             <td>
-                                                <span>Lorem Ipsum is simply text of the printing and typesetting industry.</span>
+                                               SARJANABKOKU02012
                                             </td>
-                                            <td class="text-right">11,200</td>
-                                            <td class="text-right">$66</td>
-                                            <td class="text-right"><strong>$13,205</strong></td>
+                                            
+                                            <td>Layak</td>
                                         </tr>
-                                        <tr data-status="blocked">
-                                            <td class="w60">
-                                                <img src="assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 ">
+                                        
+                                        <tr data-status="Disokong">
+                                            <td>
+                                                Hanisah Binti Yusri
                                             </td>
                                             <td>
-                                                <a href="#" title="">Project 3</a>
-                                                <p class="mb-0">Mike</p>
-                                            </td>                                    
-                                            <td>
-                                                <span>Lorem is simply dummy text of the printing and typesetting industry.</span>
+                                                BKOKU
                                             </td>
-                                            <td class="text-right">12,280</td>
-                                            <td class="text-right">$93</td>
-                                            <td class="text-right"><strong>$2,700</strong></td>
+                                            <td>
+                                               SARJANAMUDABKOKU66012
+                                            </td>
+                                            
+                                            <td>Disokong</td>
                                         </tr>
+                                        
+                                        <tr data-status="Disokong">
+                                            <td>
+                                                Ramli Bin Sarip
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANAMUDABKOKU77012
+                                            </td>
+                                            
+                                            <td>Disokong</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Tidak Layak">
+                                            <td>
+                                                Ganesan Rao A/L Puven
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANABKOKU03412
+                                            </td>
+                                            
+                                            <td>Tidak Layak</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Tidak Layak">
+                                            <td>
+                                             Choo Mei Er
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANAMUDABKOKU00012
+                                            </td>
+                                            
+                                            <td>Tidak Layak</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Deraf">
+                                            <td>
+                                                Chai Jing Si
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANABKOKU22012
+                                            </td>
+                                            
+                                            <td>Deraf</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Deraf">
+                                            <td>
+                                               Norhayati Binti Sam
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANABKOKU09012
+                                            </td>
+                                            
+                                            <td>Deraf</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Disokong">
+                                            <td>
+                                               Shamsiah Binti Yusof
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANABKOKU88012
+                                            </td>
+                                            
+                                            <td>Disokong</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Disokong">
+                                            <td>
+                                               Gayathri A/P Ganeshnaran
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANAMUDABKOKU22012
+                                            </td>
+                                            
+                                            <td>Disokong</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Disokong">
+                                            <td>
+                                               Najwa Binti Hanan
+                                            </td>
+                                            <td>
+                                                PPK
+                                            </td>
+                                            <td>
+                                               DIPPPK00012
+                                            </td>
+                                            
+                                            <td>Disokong</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Aktif">
+                                            <td>
+                                                Afiq Hazim Bin Abdul Malik
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANAMUDABKOKU00012
+                                            </td>
+                                            
+                                            <td>Aktif</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Dikembalikan">
+                                            <td>
+                                               Siti Farah Binti Muazin
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANABKOKU50012
+                                            </td>
+                                            
+                                            <td>Dikembalikan</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Dikembalikan">
+                                            <td>
+                                                Clarrisa Yong Chu Ni 
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANAMUDABKOKU00012
+                                            </td>
+                                            
+                                            <td>Dikembalikan</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Aktif">
+                                            <td>
+                                                Puah Chu Er
+                                             </td>
+                                             <td>
+                                                 BKOKU
+                                             </td>
+                                             <td>
+                                                SARJANABKOKU02012
+                                             </td>
+                                             
+                                             <td>Aktif</td>
+                                            
+                                         
+                                        </tr>
+                                        
+                                        <tr data-status="Aktif">
+                                            <td>
+                                                Afiq Hazim Bin Abdul Malik
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANAMUDABKOKU00012
+                                            </td>
+                                            
+                                            <td>Aktif</td>
+                                        </tr>
+                                        
+                                        <tr data-status="Tidak Aktif">
+                                            <td>
+                                                Alia Dania
+                                            </td>
+                                            <td>
+                                                BKOKU
+                                            </td>
+                                            <td>
+                                               SARJANABKOKU00012
+                                            </td>
+                                            
+                                            <td>Tidak Aktif</td>
+                                        </tr>
+                                        
+                                       
+                                        
+                                       
+                                     
+                                       
                                     </tbody>
                                 </table>
                             </div>
