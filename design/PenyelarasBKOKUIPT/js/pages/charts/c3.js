@@ -464,22 +464,38 @@ c3.generate({
     },
 });
 c3.generate({
-    bindto: '#chart-donut', // id of chart wrapper
+    bindto: '#chart-donut-BKOKU', // id of chart wrapper
     data: {
         columns: [
             // each columns data
-            ['data1', 63],
-            ['data2', 37]
+            ['data1', 5],
+            ['data2', 15],
+            ['data3', 20],
+            ['data4', 30],
+            ['data5', 10],
+            ['data6', 10],
+            ['data7', 10]
         ],
         type: 'donut', // default type of chart
         colors: {
-            'data1': '#2c83b6',
-            'data2': '#61bda1',
+            'data1': '#64c4df',
+            'data2': '#64dfbc',
+            'data3': '#daf7a6',
+            'data4': '#ffc300',
+            'data5': '#ff5733',
+            'data6': '#c70029',
+            'data7': '#c70039',
         },
         names: {
             // name of each serie
-            'data1': 'indigo',
-            'data2': 'indigo light'
+            'data1': 'Deraf',
+            'data2': 'Baru',
+            'data3': 'Saringan',
+            'data4': 'Disokong',
+            'data5': 'Dikembalikan',
+            'data6': 'Layak',
+            'data7': 'Tidak Layak'
+
         }
     },
     axis: {

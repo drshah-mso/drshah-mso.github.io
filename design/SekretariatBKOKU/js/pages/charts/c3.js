@@ -474,7 +474,7 @@ c3.generate({
             ['data4', 30],
             ['data5', 10],
             ['data6', 10],
-            ['data6', 10]
+            ['data7', 10]
         ],
         type: 'donut', // default type of chart
         colors: {
@@ -484,7 +484,7 @@ c3.generate({
             'data4': '#ffc300',
             'data5': '#ff5733',
             'data6': '#c70029',
-            'data6': '#c70039',
+            'data7': '#c70039',
         },
         names: {
             // name of each serie
@@ -519,7 +519,7 @@ c3.generate({
             ['data4', 30],
             ['data5', 10],
             ['data6', 10],
-            ['data6', 10]
+            ['data7', 10]
         ],
         type: 'donut', // default type of chart
         colors: {
@@ -529,7 +529,7 @@ c3.generate({
             'data4': '#ffc300',
             'data5': '#ff5733',
             'data6': '#c70029',
-            'data6': '#c70039',
+            'data7': '#c70039',
         },
         names: {
             // name of each serie
