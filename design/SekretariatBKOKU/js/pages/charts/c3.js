@@ -393,8 +393,8 @@ c3.generate({
     data: {
         columns: [
             // each columns data
-            ['data1', 11, 8, 15, 18, 19, 17],
-            ['data2', 7, 7, 5, 7, 9, 12]
+            ['data1', 11, 8, 15, 18, 19, 17, 25, 10, 21, 23, 11, 10],
+            ['data2', 7, 7, 5, 7, 9, 12, 5, 6, 8, 9, 1, 3]
         ],
         type: 'bar', // default type of chart
         groups: [
@@ -406,25 +406,25 @@ c3.generate({
         },
         names: {
             // name of each serie
-            'data1': 'Maximum',
-            'data2': 'Minimum'
+            'data1': 'BKOKU',
+            'data2': 'PPK'
         }
     },
     axis: {
         x: {
             type: 'category',
             // name of each category
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+            categories: ['Januari', 'Februari', 'Mac', 'April', 'Mei', 'Jun','Julai','Ogos','September','Oktober','November','Disember']
         },
     },
     bar: {
-        width: 16
+        width: 40
     },
     legend: {
         show: true, //hide legend
     },
     padding: {
-        bottom: 20,
+        bottom: 10,
         top: 0
     },
 });

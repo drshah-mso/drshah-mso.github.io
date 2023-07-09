@@ -1666,7 +1666,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     var options = {
         chart: {
-            height: 250,
+            height: 300,
             type: 'donut',
         },
         legend: {
