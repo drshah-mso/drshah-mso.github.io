@@ -464,7 +464,7 @@ c3.generate({
     },
 });
 c3.generate({
-    bindto: '#chart-donut', // id of chart wrapper
+    bindto: '#chart-donut-BKOKU', // id of chart wrapper
     data: {
         columns: [
             // each columns data
@@ -478,8 +478,37 @@ c3.generate({
         },
         names: {
             // name of each serie
-            'data1': 'indigo',
-            'data2': 'indigo light'
+            'data1': 'Permohonan Aktif',
+            'data2': 'Permohonan Tidak Aktif'
+        }
+    },
+    axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
+c3.generate({
+    bindto: '#chart-donut-PPK', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 63],
+            ['data2', 37]
+        ],
+        type: 'donut', // default type of chart
+        colors: {
+            'data1': '#2c83b6',
+            'data2': '#61bda1',
+        },
+        names: {
+            // name of each serie
+            'data1': 'Permohonan Aktif',
+            'data2': 'Permohonan Tidak Aktif'
         }
     },
     axis: {
