@@ -468,11 +468,11 @@ c3.generate({
     data: {
         columns: [
             // each columns data
-            ['data1', 10],
-            ['data2', 20],
-            ['data3', 10],
-            ['data4', 10],
-            ['data5', 30],
+            ['data1', 5],
+            ['data2', 15],
+            ['data3', 20],
+            ['data4', 30],
+            ['data5', 10],
             ['data6', 10],
             ['data6', 10]
         ],
@@ -513,18 +513,33 @@ c3.generate({
     data: {
         columns: [
             // each columns data
-            ['data1', 63],
-            ['data2', 37]
+            ['data1', 5],
+            ['data2', 15],
+            ['data3', 20],
+            ['data4', 30],
+            ['data5', 10],
+            ['data6', 10],
+            ['data6', 10]
         ],
         type: 'donut', // default type of chart
         colors: {
-            'data1': '#2c83b6',
-            'data2': '#61bda1',
+            'data1': '#64c4df',
+            'data2': '#64dfbc',
+            'data3': '#daf7a6',
+            'data4': '#ffc300',
+            'data5': '#ff5733',
+            'data6': '#c70029',
+            'data6': '#c70039',
         },
         names: {
             // name of each serie
-            'data1': 'Permohonan Aktif',
-            'data2': 'Permohonan Tidak Aktif'
+            'data1': 'Deraf',
+            'data2': 'Baru',
+            'data3': 'Saringan',
+            'data4': 'Disokong',
+            'data5': 'Dikembalikan',
+            'data6': 'Layak',
+            'data7': 'Tidak Layak'
         }
     },
     axis: {
