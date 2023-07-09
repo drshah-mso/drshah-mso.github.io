@@ -468,18 +468,31 @@ c3.generate({
     data: {
         columns: [
             // each columns data
-            ['data1', 60],
-            ['data2', 40]
+            ['data1', 10],
+            ['data2', 20],
+            ['data3', 10],
+            ['data4', 10],
+            ['data5', 40],
+            ['data6', 10]
         ],
         type: 'donut', // default type of chart
         colors: {
-            'data1': '#2c83b6',
-            'data2': '#61bda1',
+            'data1': '#64c4df',
+            'data2': '#64dfbc',
+            'data3': '#daf7a6',
+            'data4': '#ffc300',
+            'data5': '#ff5733',
+            'data6': '#c70039',
         },
         names: {
             // name of each serie
-            'data1': 'Permohonan Aktif',
-            'data2': 'Permohonan Tidak Aktif'
+            'data1': 'Draf Permohonan',
+            'data2': 'Permohonan Baru',
+            'data3': 'Layak Memohon',
+            'data4': 'Tidak Layak Memohon',
+            'data5': 'Permohonan Aktif',
+            'data6': 'Permohonan Tidak Aktif'
+
         }
     },
     axis: {
