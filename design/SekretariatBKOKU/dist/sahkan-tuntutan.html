@@ -209,12 +209,12 @@
                         <li class="header">Permohonan</li>
                         <li><a href="permohonan.html"><i class="fa fa-files-o"></i> <span>Status Permohonan</span></a></li>
                         <li><a href="saring-permohonan.html"><i class="fa fa-folder-o"></i> <span>Saring Permohonan</span></a></li>
-                        <li class="active"><a href="sahkan-permohonan.html"><i class="fa fa-check-circle-o"></i> <span>Pengesahan Permohonan</span></a></li>
+                        <li ><a href="sahkan-permohonan.html"><i class="fa fa-check-circle-o"></i> <span>Pengesahan Permohonan</span></a></li>
                         <li><a href="kembali-permohonan.html"><i class="fa fa-mail-reply"></i> <span>Kembalikan Permohonan</span></a></li>
                         <li class="header">Tuntutan</li>
                         <li><a href="tuntutan.html"><i class="fa fa-money"></i> <span>Status Tuntutan</span></a></li>
                         <li><a href="saring-tuntutan.html"><i class="fa fa-file-o"></i> <span>Saring Tuntutan</span></a></li>
-                        <li><a href="sahkan-tuntutan.html"><i class="fa fa-check-square"></i> <span>Pengesahan Tuntutan</span></a></li>
+                        <li class="active"><a href="sahkan-tuntutan.html"><i class="fa fa-check-square"></i> <span>Pengesahan Tuntutan</span></a></li>
                         <li><a href="kembali-tuntutan.html"><i class="fa fa-mail-reply-all"></i> <span>Kembalikan Tuntutan</span></a></li>
                         <li class="header">Laporan</li>
                         <li><a href="laporan.html"><i class="fa fa-list-alt"></i> <span>Laporan</span></a></li>
@@ -321,20 +321,20 @@
                                                
                                                 <th><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
                                                 <th>Nama</th>
-                                                <th>ID Permohonan</th>
-                                                <th>Jenis Permohonan</th>
-                                                <th>Status Permohonan</th>
-                                                <th>Tindakan</th>
+                                                <th>ID Tuntutan</th>
+                                                <th>Jenis Tuntutan</th>
+                                                <th>Status Tuntutan</th>
+                                                <th>Catatan</th>
                                                
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                <td><input type="checkbox" name="select_all" value="1" id="example-select-all"></td>
-                                                <td>Arina Binti Saleh</td>
-                                                <td><a href="maklumat-pemohon.html" title="">SARJANAMUDABKOKU000011</a></td>
-                                                <td>BKOKU</td>
-                                                <td>7/7/2023</td>
+                                                <td>Ali Bin Abu</td>
+                                                <td><a href="maklumat-tuntutan.html" title="">TTBKOKU000011	</a></td>
+                                                <td>Yuran Asrama</td>
+                                               
                                                 <td> <button class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-check"></i> Pengesahan</button>
                                                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -344,15 +344,15 @@
                                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                                 </div>
                                                                 <div class="modal-body text-center">
-                                                                    <p>Permohonan ini</p>
+                                                                    <p>Tuntutan ini</p>
                                                                 </div>
                                                                 <div class="row clearfix text-center">
                                                                     <div class="col-lg-12">
                                                                         <div class="fancy-radio">
-                                                                            <label><input name="lulus" value="male" type="radio"><span><i></i> Layak menerima BKOKU/PPK</span></label>
+                                                                            <label><input name="lulus" value="male" type="radio"><span><i></i> Layak menerima tuntutan</span></label>
                                                                         </div>
                                                                         <div class="fancy-radio">
-                                                                            <label><input name="tidak_lulus" value="female" type="radio"><span><i></i> Tidak layak menerima BKOKU/PPK</span></label>
+                                                                            <label><input name="tidak_lulus" value="female" type="radio"><span><i></i> Tidak layak menerima tuntutan</span></label>
                                                                         </div>
                                                                         <br>
                                                                     </div>
@@ -365,34 +365,47 @@
                                                             </div>
                                                         </div>
                                                     </div></td>
+                                                    <td> <div class="form-group c_form_group">
+                                                        <label>Berikan Catatan Anda.</label>
+                                                        <textarea rows="4" type="text" class="form-control" placeholder=""></textarea>
+                                                    </div> </td>
                                               
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="select_all" value="1" id="example-select-all"></td>
-                                                <td>Choo Mei Ling</td>
-                                                <td><a href="maklumat-pemohon.html" title="">SARJANABKOKU03011</a></td>
-                                                <td>BKOKU</td>
-                                                <td>9/7/2023</td>
+                                                <td>Ramli Bin Nasir</td>
+                                                <td><a href="maklumat-tuntutan.html" title="">TTPPK000011</a></td>
+                                                <td>Yuran Pengajian</td>
                                                 <td> <button type="button" class="btn btn-danger"> Tidak Layak Tuntutan</button></td>
+                                                <td> <div class="form-group c_form_group">
+                                                    <label>Berikan Catatan Anda.</label>
+                                                    <textarea rows="4" type="text" class="form-control" placeholder=""></textarea>
+                                                </div> </td>
                                                 
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="select_all" value="1" id="example-select-all"></td>
-                                                <td>Tamila A/P Ganesh</td>
+                                                <td>Hashim Bin Mukriz</td>
                                                
-                                                <td><a href="maklumat-pemohon.html" title="">SARJANAMUDABKOKU000011</a></td>
-                                                <td>BKOKU</td>
-                                                <td>9/7/2023</td>
+                                                <td><a href="maklumat-tuntutan.html" title="">TTPPK00011</a></td>
+                                                <td>Yuran Graduasi </td>
                                                 <td> <button type="button" class="btn btn-info "> Kembalikan Tuntutan</button></td>
+                                                <td> <div class="form-group c_form_group">
+                                                    <label>Berikan Catatan Anda.</label>
+                                                    <textarea rows="4" type="text" class="form-control" placeholder=""></textarea>
+                                                </div> </td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="select_all" value="1" id="example-select-all"></td>
-                                                <td>Arissa Binti Saleh</td>
+                                                <td>Ganesh A/L Hariyaran</td>
                                                 
-                                                <td><a href="maklumat-pemohon.html" title="">DIPLOMABKOKU000011</a></td>
-                                                <td>BKOKU</td>
-                                                <td>7/7/2023</td>
+                                                <td><a href="maklumat-tuntutan.html" title="">TTPPK00211</a></td>
+                                                <td>Yuran Peperiksaan</td>
                                                 <td> <button type="button" class="btn btn-success"> Layak Tuntutan</button></td>
+                                                <td> <div class="form-group c_form_group">
+                                                    <label>Berikan Catatan Anda.</label>
+                                                    <textarea rows="4" type="text" class="form-control" placeholder=""></textarea>
+                                                </div> </td>
                                             </tr>
                                           
                                           
