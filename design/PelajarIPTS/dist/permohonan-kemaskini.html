@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>Mooli | Form Wizard</title>
+<title>Pelajar IPTS | Permohonan Baru</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -21,12 +21,12 @@
 </head>
 <body>
     
-<div id="body" class="theme-cyan">
+<div id="body" class="theme-blue">
 
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
-            <div class="m-t-30"><img src="assets/images/icon.svg" width="40" height="40" alt="Mooli"></div>
+            <div class="m-t-30"><img src="assets/images/icon.svg" width="40" height="40" alt="Mooli"></div>            
             <p>Please wait...</p>        
         </div>
     </div>
@@ -745,271 +745,349 @@
                 <!-- Page header section  -->
                 <div class="block-header">
                     <div class="row clearfix">
-                        <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
                             <h1>Hi, Pelajar IPTS!</h1>
-                            <!--<span>JustDo Form Wizard,</span>-->
-                        </div>
-                        <div class="col-lg-8 col-md-12 col-sm-12 text-lg-right">
+                            <span>Borang Pendaftaran Bantuan Kewangan Orang Kurang Upaya (OKU) di IPT</span>
+                        </div>                        
+                    </div>
+                </div>                             
+                <div class="row clearfix">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="header">
+                                <ul class="nav nav-tabs3">
+                                    <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#MaklumatPeribadi">1. Maklumat Peribadi</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#MaklumatAkademik">2. Maklumat Akademik</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#MaklumatTuntutan">3. Maklumat Tuntutan</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#MuatNaikDokumen">4. Muat Naik Dokumen</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#PerakuanPengesahan">5. Perakuan dan Pengesahan</a></li>
+                                </ul>
+                                <!--<ul class="header-dropdown dropdown">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>-->
+                            </div>
+                                <div class="tab-content mt-0">
+                                    <div class="tab-pane show active" id="MaklumatPeribadi">
+                                        <div class="body">
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Program :</span>                                                    
+                                                </div>                                                                                                                                                         
+                                            </div> 
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <label class="fancy-radio"><input name="jenis1" value="BKOKU" type="radio" checked><span style="color:black"><i></i>BKOKU</span></label>
+                                                    <label class="fancy-radio"><input name="jenis1" value="PPK" type="radio"><span style="color:black"><i></i>PPK</span></label>                                                 
+                                                </div>                                                
+                                            </div>                                                                                    
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Nama Penuh :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                          
+                                            </div>                                                    
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">No. Kad Pengenalan :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">    
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Tarikh Lahir :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                          
+                                            </div>                                                    
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Umur :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">No. Kad JKM :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">   
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Bangsa :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                       
+                                            </div>                                                    
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Jantina :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Kecacatan :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Alamat :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                       
+                                            </div>                                                    
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">No. Tel Rumah :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">No. Tel (HP) :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">   
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">No. Akaun Bank :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                          
+                                            </div>                                                    
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">E-Mel :</span>                                                    
+                                                </div>
+                                             <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                      
+                                            </div>
+                                        </div>   
+                                        <ul class="nav nav-tabs3 white mt-3 d-flex text-center">
+                                            <li class="nav-item flex-fill"><a class="nav-link active show" data-toggle="tab" href="#fakebutton">Batal</a></li>
+                                            <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Simpan Deraf</a></li>
+                                            <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Seterusnya</a></li>
+                                        </ul>                              
+                                    </div>
+                                    <div class="tab-pane" id="MaklumatAkademik">           
+                                        <div class="body">                                            
+                                                <div class="input-group input-group-sm mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="inputGroup-sizing-sm">Peringkat Pengajian :</span>                                                    
+                                                    </div>                                                                                                                 
+                                                </div> 
+                                                <div class="input-group-prepend">
+                                                    <label class="fancy-radio"><input name="jenis2" value="Sijil" type="radio" checked><span style="color:black"><i></i>Sijil Asas / Sijil</span></label>  
+                                                </div>
+                                                <div class="input-group-prepend">
+                                                    <label class="fancy-radio"><input name="jenis2" value="Diploma" type="radio"><span style="color:black"><i></i>Diploma</span></label>
+                                                </div>
+                                                <div class="input-group-prepend">
+                                                    <label class="fancy-radio"><input name="jenis2" value="DiplomaLepasanIjazah" type="radio"><span style="color:black"><i></i>Diploma Lepasan Ijazah</span></label>  
+                                                </div>
+                                                <div class="input-group-prepend">
+                                                    <label class="fancy-radio"><input name="jenis2" value="SarjanaMuda" type="radio"><span style="color:black"><i></i>Sarjana Muda</span></label> 
+                                                </div>
+                                                <div class="input-group-prepend">
+                                                    <label class="fancy-radio"><input name="jenis2" value="Sarjana" type="radio"><span style="color:black"><i></i>Sarjana</span></label>
+                                                </div>
+                                                <div class="input-group-prepend">
+                                                    <label class="fancy-radio"><input name="jenis2" value="Ph.D" type="radio"><span style="color:black"><i></i>Ph.D</span></label>  
+                                                </div>                                                                                                                          
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">No. Pendaftaran Pelajar :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-aqua" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                          
+                                            </div>                                                    
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Nama Kursus :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">    
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Nama Pusat Pengajian :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                          
+                                            </div>                                                    
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Tarikh Mula Pengajian :</span>                          
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Tarikh Tamat Pengajian :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">   
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Semester Semasa :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                       
+                                            </div>                                                    
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Tempoh Pengajian :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Bil Bulan Persemester :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Mod Pengajian :</span>                                                    
+                                                </div>                                                                                                                 
+                                            </div> 
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis3" value="Sijil" type="radio" checked><span style="color:black"><i></i>Sepenuh Masa</span></label>  
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis3" value="Diploma" type="radio"><span style="color:black"><i></i>Jarak Jauh</span></label>
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis3" value="DiplomaLepasanIjazah" type="radio"><span style="color:black"><i></i>Separuh Masa</span></label>  
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis3" value="SarjanaMuda" type="radio"><span style="color:black"><i></i>Dalam Talian (Online)</span></label> 
+                                            </div>                                      
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">CGPA Terkini :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                       
+                                            </div> 
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Sumber Pembiayaan :</span>                                                    
+                                                </div>                                                                                                                 
+                                            </div> 
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis4" value="Sijil" type="radio" checked><span style="color:black"><i></i>Biasiswa</span></label>  
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis4" value="Diploma" type="radio"><span style="color:black"><i></i>Tajaan Majikan</span></label>
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis4" value="DiplomaLepasanIjazah" type="radio"><span style="color:black"><i></i>Pinjaman</span></label>  
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis4" value="SarjanaMuda" type="radio"><span style="color:black"><i></i>Sendiri / Tiada Penaja</span></label> 
+                                            </div>   
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis4" value="SarjanaMuda" type="radio"><span style="color:black"><i></i>Lain-lain</span></label> 
+                                            </div>                                                                                       
+                                            <div class="input-group input-group-sm mb-3">                                                  
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Nama Penaja :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-white" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  
+                                            </div>                                            
+                                        </div> 
+                                        <ul class="nav nav-tabs3 white mt-3 d-flex text-center">
+                                            <li class="nav-item flex-fill"><a class="nav-link active show" data-toggle="tab" href="#fakebutton">Sebelumnya</a></li>
+                                            <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Simpan Deraf</a></li>
+                                            <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Seterusnya</a></li>
+                                        </ul>                      
+                                    </div>
+                                    <div class="tab-pane" id="MaklumatTuntutan">
+                                        <div class="body">                                            
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Jenis Tuntutan :</span>                                                    
+                                                </div>                                                                                                                 
+                                            </div> 
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-checkbox"><input name="jenis5" value="Sijil" type="checkbox"><span style="color:black"><i></i>Yuran</span></label>  
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-checkbox"><input name="jenis5" value="Diploma" type="checkbox"><span style="color:black"><i></i>Elaun Wang Saku</span></label>
+                                            </div>                                                                                                                         
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Amaun :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-aqua" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                          
+                                            </div>
+                                        </div>
+                                        <ul class="nav nav-tabs3 white mt-3 d-flex text-center">
+                                            <li class="nav-item flex-fill"><a class="nav-link active show" data-toggle="tab" href="#fakebutton">Sebelumnya</a></li>
+                                            <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Simpan Deraf</a></li>
+                                            <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Seterusnya</a></li>
+                                        </ul>  
+                                    </div> 
+                                    <div class="tab-pane" id="MuatNaikDokumen">
+                                        <div class="body">
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>Pilih Dokumen <small>PDF, JPEG, atau PNG sahaja.</small></h2>
+                                                    </div>
+                                                    <div class="body">
+                                                        <input type="file" class="dropify" data-allowed-file-extensions="pdf png">
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>
+                                        <ul class="nav nav-tabs3 white mt-3 d-flex text-center">
+                                            <li class="nav-item flex-fill"><a class="nav-link active show" data-toggle="tab" href="#fakebutton">Sebelumnya</a></li>
+                                            <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Simpan Deraf</a></li>
+                                            <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Seterusnya</a></li>
+                                        </ul>
+                                    </div>                      
+                                    <div class="tab-pane" id="PerakuanPengesahan">
+                                        <div class="body">                                            
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <p>Saya mengaku bahawa segala maklumat yang diberikan adalah betul dan benar belaka. Saya juga faham sekiranya maklumat yang diberikan didapati palsu atau tidak benar, pihak kementerian berhak menolak permohonan saya dan menghentikan bantuan kewangan ini kepada saya.</p>                                                    
+                                                </div>                                                                                                                 
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Permohonan saya adalah untuk tuntutan (pilih salah satu di bawah) :</span>                                                    
+                                                </div>                                                                                                                 
+                                            </div>  
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis6" value="Sijil" type="radio" checked><span style="color:black"><i></i>Bantuan Wang Saku dan Yuran Pengajian</span></label>  
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis6" value="Diploma" type="radio"><span style="color:black"><i></i>Bantuan Wang Saku Sahaja</span></label>
+                                            </div>  
+                                            <div class="input-group-prepend">
+                                                <label class="fancy-radio"><input name="jenis6" value="Diploma" type="radio"><span style="color:black"><i></i>Bantuan Yuran Pengajian Sahaja</span></label>
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Tarikh :</span>                                                    
+                                                </div>
+                                                <input type="text" class="form-control bg-aqua" aria-label="Small" aria-describedby="inputGroup-sizing-sm">                                                                                                          
+                                            </div>   
+                                            <ul class="nav nav-tabs3 white mt-3 d-flex text-center">
+                                                <li class="nav-item flex-fill"><a class="nav-link active show" data-toggle="tab" href="#fakebutton">Sebelumnya</a></li>
+                                                <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Simpan Deraf</a></li>
+                                                <li class="nav-item flex-fill"><a class="nav-link" data-toggle="tab" href="#fakebutton">Hantar</a></li>
+                                            </ul>                                                                                                                        
+                                        </div>
+                                    </div>
+                                </div>
                             
                         </div>
                     </div>
                 </div>
-                <div class="row clearfix">
-                    <!--<div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Horizontal Layout with icon</h2>
-                                <ul class="header-dropdown dropdown">
-                                    
-                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu theme-bg gradient">
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div id="wizard_horizontal_icon" class="step_icon">
-                                    <h2><i class="fa fa-home"></i></h2>
-                                    <section>
-                                        <p>In euismod augue ullamcorper leo dignissim quis elementum
-                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
-                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
-                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
-                                    </section>
-                                    <h2><i class="fa fa-gear"></i></h2>
-                                    <section>
-                                        <p>In euismod augue ullamcorper leo dignissim quis elementum
-                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
-                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
-                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
-                                    </section>
-                                    <h2><i class="fa fa-hand-o-right"></i></h2>
-                                    <section>
-                                        <p>In euismod augue ullamcorper leo dignissim quis elementum
-                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
-                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
-                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Horizontal Layout with step</h2>
-                                <ul class="header-dropdown dropdown">
-                                    
-                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu theme-bg gradient">
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div id="wizard_horizontal">
-                                    <h2>First Step</h2>
-                                    <section>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
-                                            arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
-                                            dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
-                                            dolor, tristique ac tempus nec, iaculis quis nisi. </p>
-                                    </section>
-                                    <h2>Second Step</h2>
-                                    <section>
-                                        <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
-                                            ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
-                                            tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
-                                            nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
-                                            a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
-                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
-                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
-                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus. </p>
-                                    </section>
-                                    <h2>Third Step</h2>
-                                    <section>
-                                        <p> Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
-                                            condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
-                                            Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
-                                            Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
-                                            commodo lectus sollicitudin in auctor mauris venenatis. </p>
-                                    </section>
-                                    <h2>Forth Step</h2>
-                                    <section>
-                                        <p> Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
-                                            vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
-                                            ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
-                                            Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
-                                            tortor. </p>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Basic Example - Vertical Layout</h2>
-                                <ul class="header-dropdown dropdown">
-                                    
-                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu theme-bg gradient">
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div id="wizard_vertical">
-                                    <h2>First Step</h2>
-                                    <section>
-                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
-                                            arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
-                                            dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
-                                            dolor, tristique ac tempus nec, iaculis quis nisi. </p>
-                                    </section>
-                                    <h2>Second Step</h2>
-                                    <section>
-                                        <p> Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
-                                            ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
-                                            tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
-                                            nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
-                                            a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
-                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
-                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
-                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus. </p>
-                                    </section>
-                                    <h2>Third Step</h2>
-                                    <section>
-                                        <p> Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
-                                            condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
-                                            Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
-                                            Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
-                                            commodo lectus sollicitudin in auctor mauris venenatis. </p>
-                                    </section>
-                                    <h2>Forth Step</h2>
-                                    <section>
-                                        <p> Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
-                                            vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
-                                            ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
-                                            Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
-                                            tortor. </p>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <!--<div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Advanced Form Example With Validation</h2>
-                                <ul class="header-dropdown dropdown">
-                                    
-                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu theme-bg gradient">
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body wizard_validation">
-                                <form id="wizard_with_validation" method="POST">
-                                    <h3>Account Information</h3>
-                                    <fieldset>
-                                        <div class="row clearfix">
-                                            <div class="col-lg-4 col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Username *" name="username" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12">
-                                                <div class="form-group">
-                                                    <input type="password" class="form-control" placeholder="Password *" name="password" id="password" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12">
-                                                <div class="form-group">
-                                                    <input type="password" class="form-control" placeholder="Confirm Password *" name="confirm" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <h3>Profile Information</h3>
-                                    <fieldset>
-                                        <div class="row clearfix">
-                                            <div class="col-lg-4 col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" name="name" placeholder="First Name *" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" name="surname" placeholder="Last Name *" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12">
-                                                <div class="form-group">
-                                                    <input type="email" name="email" placeholder="Email *" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input min="18" type="number" name="age" placeholder="Age *" class="form-control" required>
-                                                    <div class="help-info">The warning step will show up if age is less than 18</div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <textarea name="address" cols="30" rows="3" placeholder="Address *" class="form-control no-resize" required></textarea>
-                                                </div>                                            
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <h3>Terms Conditions - Finish</h3>
-                                    <fieldset>
-                                        <div class="form-group">
-                                            <div class="fancy-checkbox">
-                                                <label><input type="checkbox" name="acceptTerms"><span>I agree with the Terms and Conditions.</span></label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </div>
         
