@@ -562,7 +562,7 @@ c3.generate({
             // name of each serie
             'data1': 'Layak',
             'data2': 'Dikembalikan',
-            'data3': 'Tidak Layak',
+            'data3': 'Tidak Layak'
         }
     },
     axis: {
