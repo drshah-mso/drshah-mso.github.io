@@ -525,7 +525,7 @@ c3.generate({
         names: {
             // name of each serie
             'data1': 'Deraf',
-            'data2': 'Baru',
+            'data2': 'Telah dihantar',
             'data3': 'Saringan',
             'data4': 'Disokong',
             'data5': 'Dikembalikan',
@@ -604,7 +604,7 @@ c3.generate({
         names: {
             // name of each serie
             'data1': 'Deraf',
-            'data2': 'Baru',
+            'data2': 'Telah hantar',
             'data3': 'Saringan',
             'data4': 'Disokong',
             'data5': 'Dikembalikan',
