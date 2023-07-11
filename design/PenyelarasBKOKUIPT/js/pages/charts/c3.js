@@ -314,29 +314,32 @@ c3.generate({
     },
 });
 c3.generate({
-    bindto: '#chart-bar', // id of chart wrapper
+    bindto: '#chart-bar-kptsn', // id of chart wrapper
     data: {
         columns: [
             // each columns data
             ['data1', 11, 8, 15, 18, 19, 17],
-            ['data2', 7, 7, 5, 7, 9, 12]
+            ['data2', 7, 7, 5, 7, 9, 12],
+            ['data3', 1, 2, 3, 1, 2, 3],
         ],
         type: 'bar', // default type of chart
         colors: {
-            'data1': '#61bda1',
-            'data2': '#2c83b6',
+            'data1': '#90ee90',
+            'data2': '#ffa500',
+            'data3': '#ff0000'
         },
         names: {
             // name of each serie
-            'data1': 'Maximum',
-            'data2': 'Minimum'
+            'data1': 'Layak',
+            'data2': 'Dikembalikan',
+            'data3': 'Tidak Layak',
         }
     },
     axis: {
         x: {
             type: 'category',
             // name of each category
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+            categories: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun']
         },
     },
     bar: {
