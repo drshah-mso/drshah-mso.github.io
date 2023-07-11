@@ -132,6 +132,47 @@ $(function(){
         },
     });
 
+    var chart = c3.generate({
+        bindto: '#chart-bar-stacked-2023', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 110, 81, 158, 108, 149, 217,12],
+                ['data2', 70, 192, 75, 97, 219, 152,11]
+            ],
+            type: 'bar', // default type of chart
+            groups: [
+                [ 'data1', 'data2']
+            ],
+            colors: {
+                'data1': '#9367B4',
+                'data2': '#17C2D7',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Pendengaran', 'Penglihatan', 'Pertuturan', 'Fizikal', 'Pembelajaran', 'Mental','Pelbagai']
+            },
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0,
+            left: 6,
+        },
+    });
     //multiple comparison series
     var chart = c3.generate({
         bindto: '#chart-donut-d', // id of chart wrapper
@@ -202,7 +243,7 @@ $(function(){
     });
     //multiple comparison series
     var chart = c3.generate({
-        bindto: '#chart-2023', // id of chart wrapper
+        bindto: '#chart-2020', // id of chart wrapper
         data: {
             type: 'donut', // default type of chart
 
