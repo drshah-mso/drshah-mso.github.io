@@ -434,23 +434,20 @@ c3.generate({
         columns: [
             // each columns data
             ['data1', 63],
-            ['data2', 44],
-            ['data3', 12],
-            ['data4', 14]
+            ['data2', 37]
+          
         ],
         type: 'pie', // default type of chart
         colors: {
-            'data1': '#1c3353', 
-            'data2': '#2c83b6', 
-            'data3': '#61bda1', 
-            'data4': '#a5d8a2', 
+            'data1': '#90ee90', 
+            'data2': '#ffOOOO'
+           
         },
         names: {
             // name of each serie
-            'data1': 'darker',
-            'data2': 'blue',
-            'data3': 'lighter',
-            'data4': 'light',
+            'data1': 'Aktif',
+            'data2': 'Tidak Aktif',
+           
         }
     },
     axis: {
