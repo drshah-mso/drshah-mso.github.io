@@ -145,8 +145,8 @@ $(function(){
                 [ 'data1', 'data2']
             ],
             colors: {
-                'data1': '#9367B4',
-                'data2': '#17C2D7',
+                'data1':'#333eff',
+                'data2': '#8e33ff'
             },
             names: {
                 // name of each serie
