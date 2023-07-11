@@ -564,7 +564,7 @@
                 <div class="block-header">
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1>Utama</h1>
+                            <h1>Daftar Pengguna</h1>
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12 text-lg-right">
                             
@@ -582,19 +582,30 @@
             </div>
             <br>
             <div class="row clearfix">
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-3 col-md-12">
                     <div class="form-group c_form_group">
                         <label>Maklumat ID Pengguna</label>
                         <input type="text" class="form-control" placeholder="@userusmpenyelaras">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-3 col-md-12">
+                    <div class="form-group c_form_group">
+                        <label>Jawatan</label>
+                        <select class="form-control">
+                            <option value="">Pilih</option>
+                            <option value="AF" selected>Penyelaras BKOKU IPT</option>
+                            <option value="AX">Pelajar IPTS</option>
+                            <option value="AX">Pegawai Atasan KPT</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
                     <div class="form-group c_form_group">
                         <label>Kata Laluan</label>
                         <input type="text" class="form-control" placeholder="@usm1234*L">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-3 col-md-12">
                     <div class="form-group c_form_group">
                         <label>E-mel</label>
                         <input type="text" class="form-control" placeholder="usmipt@usm.my">
@@ -617,6 +628,7 @@
                         <tr>
                             <th style="width: 10px;">Bil</th>                                                        
                             <th style="width: 30px; text-align: center">ID Pengguna</th>
+                            <th style="width: 30px; text-align: center">Jawatan Pengguna</th>
                             <th style="width: 80px;">E-mel Pengguna</th>
                             <th style="width: 80px;">Masa & Tarikh Daftar</th>
                            
@@ -628,7 +640,11 @@
                             <td>
                                 <span>@userusmpenyelaras</span>
                               
-                            </td>   
+                            </td>  
+                            <td>
+                                <span>Penyelaras BKOKU IPT</span>
+                              
+                            </td>    
                             <td>
                                 <span>usmipt@usm.my</span>
                               
