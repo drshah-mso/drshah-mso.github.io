@@ -6,8 +6,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<meta name="description" content="Mooli Bootstrap 4x admin is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities.">
-<meta name="author" content="GetBootstrap, design by: puffintheme.com">
+<meta name="description" content="Bantuan Kewangan Pelajar Orang Kurang Upaya(OKU) Di Institusi Pengajian Tinggi (IPT)">
+<meta name="author" content="Prototype Mockup">
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- VENDOR CSS -->
@@ -484,33 +484,36 @@
                                     </div>
                                 </div></div>
                         </div>
+                        <br>
                     </div>
+                    <br>
+                 
                     <div class="row clearfix">
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card">
                             <div class="header">
                                 <h2>Permohonan Baru (Keseluruhan)</h2>
-                                <small class="font-12">The total number of Page Impressions within the date range</small>
+                                <small class="font-12">Jumlah Keseluruhan Permohonan Baru Yang Terkini</small>
                             </div>
                             <div class="body">
-                                <div id="chart-donut-d" style="height: 220px"></div>
+                                <div id="chart-donut-d" style="height: 180px"></div>
                                 <div class="mt-2">
                                     <div class="form-group">
                                         <label class="d-block">Deraf <span class="float-right">12</span></label>
                                         <div class="progress progress-xs">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%; background-color: #2c83b6;"></div>
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 77%; background-color: #2c83b6;"></div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="d-block">Belum Memohon<span class="float-right">18</span></label>
                                         <div class="progress progress-xs">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #a5d8a2;"></div>
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #a5d8a2;"></div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="d-block">Telah Dihantar<span class="float-right">15</span></label>
                                         <div class="progress progress-xs">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #a5d8a2;"></div>
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #9367b4;"></div>
                                         </div>
                                     </div>
                                    
@@ -518,8 +521,55 @@
                             </div>
                         </div>
                     </div>
+                   
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                    <h2>Jumlah Keseluruhan Permohonan Yang Dihantar</h2>
+                                    <!--<small class="text-muted">Sales Performance for Online and Offline Revenue <a href="">Learn more</a></small>-->
+                                    <ul class="header-dropdown dropdown">
+                                        <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                            <ul class="dropdown-menu theme-bg gradient">
+                                                <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                                <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                                <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                                <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                                <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                                <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="body">
+                                    <div class="d-flex flex-row">
+                                        <div class="pb-3">
+                                            <h5 class="mb-0">50</h5>
+                                            <small class="text-muted font-11">Jumlah Didaftarkan</small>
+                                        </div>
+                                        <div class="pb-3 pl-4 pr-4">
+                                            <h5 class="mb-0">27%</h5>
+                                            <small class="text-muted font-11">Deraf</small>
+                                        </div>
+                                        <div class="pb-3">
+                                            <h5 class="mb-0">63%</h5>
+                                            <small class="text-muted font-11">Telah Dihantar</small>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <select class="form-control">
+                                                <option selected="selected">Bulan</option>
+                                                <option>Hari</option>
+                                                <option>Tahun</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="bar-chart" style="height: 300px"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <br>
+                
                     <div class="row clearfix">
                         <div class="col-12">
                             <nav class="navbar navbar-expand-lg navbar-light bg-light page_menu">
@@ -561,7 +611,7 @@
                                                             
                                                                                                 
                                                     </td>
-                                                    <td>BKOKU</td>
+                                                    <td>ACS203009</td>
                                                     <td> <button type="button" class="btn btn-info ">Belum Memohon</button></td>
                                                     <td>
                                                         <a href="permohonan-baru.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Mohon</a>
@@ -576,7 +626,7 @@
                                                             </div>
                                                         </div>                                        
                                                     </td>
-                                                    <td>BKOKU</td>
+                                                    <td>AMS203009</td>
                                                     <td> <button type="button" class="btn btn-default ">Deraf</button></td>
                                                     <td>
                                                         <a href="permohonan-baru.html" class="btn btn-primary btn-round"><i class="icon-pencil"></i> Edit</a>
@@ -589,7 +639,7 @@
                                                     <td>                                     
                                                                 <a href="maklumat-pemohon.html" title="">Sarah Binti Hashim</a>                                     
                                                     </td>
-                                                    <td>BKOKU</td>
+                                                    <td>CCS202009</td>
                                                     <td> <button type="button" class="btn btn-info ">Belum Memohon</button></td>
                                                     <td>
                                                         <a href="permohonan-baru.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Mohon</a>
@@ -604,7 +654,7 @@
                                                                 <a href="maklumat-pemohon.html" title="">Akmal Bin Mahmod</a>
                                                               
                                                     </td>
-                                                    <td>BKOKU</td>
+                                                    <td>ARS201009</td>
                                                     <td> <button type="button" class="btn btn-info ">Belum Memohon</button></td>
                                                     <td>
                                                         <a href="permohonan-baru.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Mohon</a>
@@ -634,10 +684,10 @@
 <script src="assets/bundles/apexcharts.bundle.js"></script>
 <script src="assets/bundles/jvectormap.bundle.js"></script>
 <script src="assets/vendor/toastr/toastr.js"></script>
-
+<script src="assets/bundles/chartist.bundle.js"></script>
 <!-- Project core js file minify with grunt --> 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
-<script src="../js/index.js"></script>
+
 
 
 
@@ -653,5 +703,7 @@
 
 <script src="../js/pages/forms/form-wizard.js"></script>
 <script src="../js/pages/tables/jquery-datatable.js"></script>
+<script src="../js/pages/charts/c3.js"></script>
+<script src="../js/pages/charts/chartjs.js"></script>
 </body>
 </html>

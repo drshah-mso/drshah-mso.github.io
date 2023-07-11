@@ -393,8 +393,8 @@ c3.generate({
     data: {
         columns: [
             // each columns data
-            ['data1', 11, 8, 15, 18, 19, 17],
-            ['data2', 7, 7, 5, 7, 9, 12]
+            ['data1', 11, 8, 15, 18, 19, 17, 25, 10, 21, 23, 11, 10],
+            ['data2', 7, 7, 5, 7, 9, 12, 5, 6, 8, 9, 1, 3]
         ],
         type: 'bar', // default type of chart
         groups: [
@@ -406,25 +406,25 @@ c3.generate({
         },
         names: {
             // name of each serie
-            'data1': 'Maximum',
-            'data2': 'Minimum'
+            'data1': 'BKOKU',
+            'data2': 'PPK'
         }
     },
     axis: {
         x: {
             type: 'category',
             // name of each category
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+            categories: ['Januari', 'Februari', 'Mac', 'April', 'Mei', 'Jun','Julai','Ogos','September','Oktober','November','Disember']
         },
     },
     bar: {
-        width: 16
+        width: 40
     },
     legend: {
         show: true, //hide legend
     },
     padding: {
-        bottom: 20,
+        bottom: 10,
         top: 0
     },
 });
@@ -496,6 +496,84 @@ c3.generate({
             'data6': 'Layak',
             'data7': 'Tidak Layak'
 
+        }
+    },
+    axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
+//multiple comparison series
+var chart = c3.generate({
+    bindto: '#chart-donut-d', // id of chart wrapper
+    data: {
+        type: 'donut', // default type of chart
+
+        columns: [
+            // each columns data
+            ['data1', 50],
+            ['data2', 30],
+            ['data3', 70]
+        ],            
+        colors: {
+            'data1': '#2c83b6',
+            'data2': '#a5d8a2',
+            'data3': '#9367b4',
+        },
+        names: {
+            // name of each serie
+            'data1': 'Deraf',
+            'data2': 'Belum Memohon',
+            'data3': 'Telah Dihantar',
+        }
+    },
+    axis: {
+    },
+    legend: {
+        show: false, //hide legend
+    },
+    padding: {
+        bottom: 0,
+        top: 0
+    },
+});
+c3.generate({
+    bindto: '#chart-donut-PPK', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 5],
+            ['data2', 15],
+            ['data3', 20],
+            ['data4', 30],
+            ['data5', 10],
+            ['data6', 10],
+            ['data7', 10]
+        ],
+        type: 'donut', // default type of chart
+        colors: {
+            'data1': '#64c4df',
+            'data2': '#64dfbc',
+            'data3': '#daf7a6',
+            'data4': '#ffc300',
+            'data5': '#ff5733',
+            'data6': '#c70029',
+            'data7': '#c70039',
+        },
+        names: {
+            // name of each serie
+            'data1': 'Deraf',
+            'data2': 'Baru',
+            'data3': 'Saringan',
+            'data4': 'Disokong',
+            'data5': 'Dikembalikan',
+            'data6': 'Layak',
+            'data7': 'Tidak Layak'
         }
     },
     axis: {
