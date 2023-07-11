@@ -337,6 +337,47 @@ $(function(){
             left: 6,
         },
     });
+    var chart = c3.generate({
+        bindto: '#chart-bar-stacked-2020', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 30, 19, 18, 88, 89, 27,12],
+                ['data2', 10, 12, 45, 67, 13, 10,11]
+            ],
+            type: 'bar', // default type of chart
+            groups: [
+                [ 'data1', 'data2']
+            ],
+            colors: {
+                'data1': '#3371ff',
+                'data2': '#ff33d7',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Pendengaran', 'Penglihatan', 'Pertuturan', 'Fizikal', 'Pembelajaran', 'Mental','Pelbagai']
+            },
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0,
+            left: 6,
+        },
+    });
   
     //multiple comparison series
     var chart = c3.generate({
