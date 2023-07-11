@@ -200,6 +200,40 @@ $(function(){
             top: 0
         },
     });
+    //multiple comparison series
+    var chart = c3.generate({
+        bindto: '#chart-2023', // id of chart wrapper
+        data: {
+            type: 'donut', // default type of chart
+
+            columns: [
+                // each columns data
+                ['data1', 60],
+                ['data2', 40],
+            
+            ],            
+            colors: {
+                'data1': '#3371ff',
+                'data2': '#ff33d7',
+                
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan',
+             
+            }
+        },
+        axis: {
+        },
+        legend: {
+            show: false, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0
+        },
+    });
     var chart = c3.generate({
         bindto: '#chart-bar-rotated', // id of chart wrapper
         data: {
