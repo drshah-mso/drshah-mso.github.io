@@ -460,14 +460,15 @@ c3.generate({
         top: 0
     },
 });
+
 c3.generate({
     bindto: '#chart-pie-kptsn', // id of chart wrapper
     data: {
         columns: [
             // each columns data
-            ['data1', 63],
+            ['data1', 53],
             ['data2', 27],
-            ['data2', 10],
+            ['data2', 20],
           
         ],
         type: 'pie', // default type of chart
