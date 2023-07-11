@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>Pentadbir Sistem | Urus Pengguna</title>
+<title>Pentadbir Sistem | Sistem Integrasi</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -573,38 +573,54 @@
                 </div>
 <div class="card">
     <div class="card-header">
-       Urus Pengguna
+       Sistem Integrasi
     </div>
     <div class="card-body">
         <div class="row clearfix">
         <div class="col-lg-12 col-md-12">
-            <div class="col-md-6 col-sm-6">
-                <p><strong>Senarai Pengguna yang didaftar</strong></p>                                     
+            <div class="form-group c_form_group">
+                <label>Pilih Sistem</label>
+                <select class="form-control">
+                    <option value="">Pilih</option>
+                    <option value="AF" selected>SMOKU</option>
+                    <option value="AX">MyMoheS</option>
+                    <option value="AX">e-IPTS</option>
+                </select>
             </div>
+            <button type="button" class="btn btn-success theme-bg gradient">Hantar</button>
             <div class="table-responsive">
                 <table class="table table-hover table-bordered mb-5">
                     <thead class="table-primary">
                         <tr>
                             <th style="width: 10px;">Bil</th>                                                        
-                            <th style="width: 30px; text-align: center">ID Pengguna</th>
-                            <th style="width: 80px;">E-mel Pengguna</th>
-                            <th style="width: 80px;">Masa & Tarikh Daftar</th>
-                            <th style="width: 80px;">Status Pengguna</th>
-                            <th style="width: 80px;">Tindakan</th>
-                           
+                            <th style="width: 30px; text-align: center">Nama Sistem</th>
+                            <th style="width: 80px;">Semakan (patch) </th>
+                            <th style="width: 80px;">Tarikh & Masa Kemaskini</th>  
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
                             <td>
-                                <span>@userusmpenyelaras</span>
+                                <span>SMOKU</span>
                             </td>   
                             <td>
-                                <span>usmipt@usm.my</span> 
+                                <span>Updated versi 12.0.0</span> 
                             </td>   
                             <td>
-                                <span>4:19 AM 12/07/2023</span>
+                                <span>6:40 AM 12/07/2023</span>
+                            </td>     
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <span>SMOKU</span>
+                            </td>   
+                            <td>
+                                <span>Updated versi 12.0.1.0</span> 
+                            </td>   
+                            <td>
+                                <span>7:40 AM 12/07/2023</span>
                             </td>     
                         </tr>
                     </tbody>
