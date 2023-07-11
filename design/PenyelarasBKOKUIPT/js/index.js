@@ -256,6 +256,47 @@ $(function(){
         },
     });
     var chart = c3.generate({
+        bindto: '#chart-bar-stacked-b-2020', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 10, 81, 78, 108, 149, 217,12],
+                ['data2', 70, 192, 75, 97, 219, 152,11]
+            ],
+            type: 'bar', // default type of chart
+            groups: [
+                [ 'data1', 'data2']
+            ],
+            colors: {
+                'data1':'#3371ff',
+                'data2': '#ff33d7'
+            },
+            names: {
+                // name of each serie
+                'data1': 'Layak',
+                'data2': 'Tidak Layak'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Jan', 'Feb', 'Mac', 'Jun', 'Jul', 'Ogos','Sep','Okt','Nov','Dec']
+            },
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0,
+            left: 6,
+        },
+    });
+    var chart = c3.generate({
         bindto: '#chart-bar-stacked-2022', // id of chart wrapper
         data: {
             columns: [
