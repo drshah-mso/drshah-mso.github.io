@@ -27,7 +27,7 @@ $(function() {
         
         // Order_status
         var chart = c3.generate({
-            bindto: '#Order_status', // id of chart wrapper
+            bindto: '#carta-2023', // id of chart wrapper
             data: {
                 columns: [
                     // each columns data
@@ -41,8 +41,39 @@ $(function() {
                 },
                 names: {
                     // name of each serie
-                    'data1': 'This Month',
-                    'data2': 'Last Month'
+                    'data1': 'Lelaki',
+                    'data2': 'Perempuan'
+                }
+            },
+            axis: {
+            },
+            legend: {
+                show: false, //hide legend
+            },
+            padding: {
+                bottom: 20,
+                top: 0
+            },
+        });
+    
+         // Order_status
+         var chart = c3.generate({
+            bindto: '#carta-2020', // id of chart wrapper
+            data: {
+                columns: [
+                    // each columns data
+                    ['data1', 60],
+                    ['data2', 40]
+                ],
+                type: 'donut', // default type of chart
+                colors: {
+                    'data1': '#0000ff',
+                    'data2': '#ffc0cb',
+                },
+                names: {
+                    // name of each serie
+                    'data1': 'Lelaki',
+                    'data2': 'Perempuan'
                 }
             },
             axis: {
