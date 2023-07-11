@@ -151,9 +151,9 @@ $(function(){
             },
             names: {
                 // name of each serie
-                'data1': 'Organic Search',
-                'data2': 'Email Campaign',
-                'data3': 'Referral Links',
+                'data1': 'Deraf',
+                'data2': 'Belum Memohon',
+                'data3': 'Telah Dihantar',
             }
         },
         axis: {
