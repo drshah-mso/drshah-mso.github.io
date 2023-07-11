@@ -242,7 +242,7 @@
                                 <ul class="nav nav-tabs">
                                     <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#Test-withicon"><i class="fa fa-calendar"></i>  Tarikh Iklan</a></li>
                                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Test1-withicon"><i class="fa fa-plus"></i>  Daftar Pengguna</a></li>
-                                    <li class="nav-item"><a class="nav-link " data-toggle="tab" href="#Home-withicon"><i class="fa fa-users"></i>  Maklumat Pengguna</a></li>
+                                    <li class="nav-item"><a class="nav-link " data-toggle="tab" href="#Home-withicon"><i class="fa fa-users"></i>  Maklumat Pelajar</a></li>
                                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Profile-withicon"><i class="fa fa-file-pdf-o"></i>  Surat Tawaran</a></li>
                                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Contact-withicon"><i class="fa fa-money"></i>  Tuntutan</a></li>
                                     
@@ -284,6 +284,10 @@
                                                     <div class = "row clearfix">
                                                         <label>Berikan Catatan Anda.</label>
                                                         <textarea rows="4" type="text" class="form-control" placeholder=""></textarea>
+                                                    </div>
+                                                    <div class="col-sm-12 m-t-20 text-right">
+                                                        <button type="button" class="btn btn-primary theme-bg gradient">Simpan</button>
+                                                        <button type="button" class="btn btn-success theme-bg gradient">Hantar</button>
                                                     </div>
                                                 </form>
                                                 <div class = "row clearfix">
@@ -406,7 +410,7 @@
                                     <div class="tab-pane" id="Home-withicon">
                                         <div class="card">
                                             <div class="card-header">
-                                               Daftar Pengguna
+                                               Maklumat Pelajar
                                             </div>
                                             <div class="card-body">
                                                 <form>
@@ -414,65 +418,180 @@
                                                         <button type="button" class="btn btn-sm btn-primary btn-round"><i class="fa fa-plus-square"> Tambah Pengguna</i></button>
                                                     </div>
                                                     <div class="row clearfix">
-                                                        <div class="col-lg-4 col-md-12">
+                                                        <div class="col-lg-12 col-md-12">
                                                             <div class="form-group c_form_group">
-                                                                <label>Maklumat ID Pengguna</label>
-                                                                <input type="text" class="form-control" placeholder="@userusmpenyelaras">
+                                                                <label>Pencarian Nama/ Kad Pengenalan/ Kad Pendaftaran OKU Pelajar:</label>
+                                                                <form id="navbar-search" class="navbar-form search-form">
+                                                                    <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
+                                                                    <input value="" class="form-control" placeholder="Search here..." type="Ali Bin Abu">                    
+                                                                </form>
                                                             </div>
                                                         </div>
-                                        
-
-
-
-
-
-
-
-
-
-                                 
-
-
-
+                                                    </div>
+                                                    <div class="row clearfix">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <p><strong>Senarai Pelajar yang didaftar</strong></p>                                     
+                                                            </div>
+                                                            <div class="table-responsive">
+                                                                <table class="table table-hover table-bordered mb-5">
+                                                                    <thead class="table-primary">
+                                                                        <tr>
+                                                                            <th style="width: 10px;">Bil</th>                                                        
+                                                                            <th style="width: 30px; text-align: center">Item Maklumat</th>
+                                                                            <th style="width: 80px;">Tindakan</th>
+                                                                           
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>
+                                                                                <span>Maklumat Peribadi</span>
+                                                                              
+                                                                            </td>   
+                                                                            <td>
+                                                                                <button type="button" class="btn btn-sm btn-primary btn-round"><i class="fa fa-edit"> Kemaskini</i></button>
+                                                                              
+                                                                            </td>   
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>2</td>
+                                                                            <td>
+                                                                                <span>Maklumat Akademik</span>
+                                                                              
+                                                                            </td>   
+                                                                            <td>
+                                                                                <button type="button" class="btn btn-sm btn-primary btn-round"><i class="fa fa-edit"> Kemaskini</i></button>
+                                                                              
+                                                                            </td>   
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>3</td>
+                                                                            <td>
+                                                                                <span>Maklumat Tuntutan</span>
+                                                                              
+                                                                            </td>   
+                                                                            <td>
+                                                                                <button type="button" class="btn btn-sm btn-primary btn-round"><i class="fa fa-edit"> Kemaskini</i></button>
+                                                                              
+                                                                            </td>   
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    
+
                                     <div class="tab-pane" id="Profile-withicon">
-                                        <h6>Surat Tawaran</h6>
-                                      
-
-
-
-
-
-
-
-
-
-
+                                        <div class="card">
+                                            <div class="card-header">
+                                               Surat Tawaran
+                                            </div>
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="row clearfix">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="form-group c_form_group">
+                                                                <label>Format Surat Tawaran</label>
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input" id="inputGroupFile04">
+                                                                        <label class="custom-file-label" for="inputGroupFile04">Salinan Surat Tawaran</label>
+                                                                    </div>      
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 m-t-20 text-right">
+                                                        <button type="button" class="btn btn-primary theme-bg gradient">Simpan</button>
+                                                        <button type="button" class="btn btn-success theme-bg gradient">Hantar</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
+                                      
                                     <div class="tab-pane" id="Contact-withicon">
-                                        <h6>Tuntutan</h6>
-                                        
-
-
-
-
-
-
-
-
-
+                                        <div class="card">
+                                            <div class="card-header">
+                                              Maklumat Tuntutan
+                                            </div>
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="row clearfix">
+                                                        <div class="col-lg-6 col-md-12">
+                                                            <div class="form-group c_form_group">
+                                                                <label>Pilih Program</label>
+                                                                <select class="form-control">
+                                                                    <option value="">Pilih</option>
+                                                                    <option value="AF" selected>BKOKU</option>
+                                                                    <option value="AX">PPK</option>
+                                                                    <option value="AX">Wang Saku</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-12">
+                                                            <div class="form-group c_form_group">
+                                                                <label>Jumlah Tuntutan Terkini (RM)</label>
+                                                                <input type="text" class="form-control" placeholder="6000.00">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class = "row clearfix">
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <p><strong>Sejarah Kemaskini Tuntutan </strong></p>                                     
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover table-bordered mb-5">
+                                                                <thead class="table-primary">
+                                                                    <tr>
+                                                                        <th style="width: 20px;">Bil</th>                                                        
+                                                                        <th style="width: 10px; text-align: center">Item Tuntutan</th>
+                                                                        <th style="width: 80px;">Jumlah Tuntutan(RM)</th>
+                                                                        <th style="width: 80px;">Masa & Tarikh Kemaskini</th>
+                                                                       
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>
+                                                                            <span>BKOKU</span>
+                                                                          
+                                                                        </td>   
+                                                                        <td>
+                                                                            <span>6000.00</span>
+                                                                          
+                                                                        </td>   
+                                                                        <td>
+                                                                            <span>4:56 AM 12/7/2023</span>
+                                                                          
+                                                                        </td>     
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
-                 
-
-               
+                </div>   
             </div>
-        </div>
-        
+        </div>    
     </div>
 </div>
 
