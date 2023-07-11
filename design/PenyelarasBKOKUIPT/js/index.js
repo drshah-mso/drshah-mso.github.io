@@ -108,15 +108,15 @@ $(function(){
             },
             names: {
                 // name of each serie
-                'data1': 'Paid',
-                'data2': 'Viral'
+                'data1': 'Telah Dihantar',
+                'data2': 'Dalam Saringan'
             }
         },
         axis: {
             x: {
                 type: 'category',
                 // name of each category
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+                categories: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun']
             },
         },
         bar: {
@@ -171,8 +171,8 @@ $(function(){
         data: {
             columns: [
                 // each columns data
-                ['data1', 11, 8, 15, 18, 19, 17],
-                ['data2', 7, 7, 5, 7, 9, 12]
+                ['data1', 11, 8, 15, 18, 10],
+                ['data2', 7, 7, 5, 7, 9]
             ],
             type: 'bar', // default type of chart
             colors: {
@@ -181,15 +181,15 @@ $(function(){
             },
             names: {
                 // name of each serie
-                'data1': 'Paid',
-                'data2': 'Viral'
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
             }
         },
         axis: {
             x: {
                 type: 'category',
                 // name of each category
-                categories: ['Google', 'Facebook', 'Twitter', 'Instagram', 'eMail', 'Other']
+                categories: ['Diploma', 'Sarjana Muda','Diploma Lepasan Ijazah',  'Sarjana', 'PhD']
             },
             rotated: true,
         },
