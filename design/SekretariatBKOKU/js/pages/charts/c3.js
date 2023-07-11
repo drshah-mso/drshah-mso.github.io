@@ -520,9 +520,9 @@ c3.generate({
         ],
         type: 'pie', // default type of chart
         colors: {
-            'data1': '#90ee90', 
-            'data2': '#ff0000',
-            'data3': '#ffa500'
+            'data1': '#2e8b57',
+            'data2': '#fdbd01',
+            'data3': '#f70d1a'
            
         },
         names: {
@@ -534,6 +534,46 @@ c3.generate({
         }
     },
     axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
+c3.generate({
+    bindto: '#chart-bar-kptsn', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 11, 8, 15, 18, 19, 17],
+            ['data2', 7, 7, 5, 7, 9, 12],
+            ['data3', 1, 2, 3, 1, 2, 3],
+        ],
+        type: 'bar', // default type of chart
+        colors: {
+            'data1': '#2e8b57',
+            'data2': '#fdbd01',
+            'data3': '#f70d1a'
+        },
+        names: {
+            // name of each serie
+            'data1': 'Layak',
+            'data2': 'Dikembalikan',
+            'data3': 'Tidak Layak',
+        }
+    },
+    axis: {
+        x: {
+            type: 'category',
+            // name of each category
+            categories: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun']
+        },
+    },
+    bar: {
+        width: 16
     },
     legend: {
         show: true, //hide legend
