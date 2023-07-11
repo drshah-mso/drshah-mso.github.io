@@ -489,6 +489,39 @@ $(function(){
         },
     });
     var chart = c3.generate({
+        bindto: '#chart-donut-d-2021', // id of chart wrapper
+        data: {
+            type: 'donut', // default type of chart
+
+            columns: [
+                // each columns data
+                ['data1', 0],
+                ['data2', 0],
+                ['data3', 100]
+            ],            
+            colors: {
+                'data1': '#2c83b6',
+                'data2': '#a5d8a2',
+                'data3': '#9367b4',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Deraf',
+                'data2': 'Belum Memohon',
+                'data3': 'Telah Dihantar',
+            }
+        },
+        axis: {
+        },
+        legend: {
+            show: false, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0
+        },
+    });
+    var chart = c3.generate({
         bindto: '#chart-donut-d-2022', // id of chart wrapper
         data: {
             type: 'donut', // default type of chart
@@ -655,6 +688,7 @@ $(function(){
             top: 0
         },
     });
+    
     var chart = c3.generate({
         bindto: '#chart-bar-rotated-2020', // id of chart wrapper
         data: {
@@ -667,6 +701,44 @@ $(function(){
             colors: {
                 'data1': '#3371ff',
                 'data2': '#ff33d7',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Diploma', 'Sarjana Muda','Diploma Lepasan Ijazah',  'Sarjana', 'PhD']
+            },
+            rotated: true,
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0
+        },
+    });
+    var chart = c3.generate({
+        bindto: '#chart-bar-rotated-2021', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 11, 8, 15, 18, 10],
+                ['data2', 7, 7, 5, 7, 9]
+            ],
+            type: 'bar', // default type of chart
+            colors: {
+                'data1': '#0c158f',
+                'data2': '#aa3e6b'
             },
             names: {
                 // name of each serie
