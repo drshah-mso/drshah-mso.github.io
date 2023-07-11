@@ -219,8 +219,8 @@ $(function(){
         data: {
             columns: [
                 // each columns data
-                ['data1', 10, 19, 18, 98, 59, 27,12],
-                ['data2', 70, 12, 75, 87, 13, 12,11]
+                ['data1', 20, 19, 18, 88, 59, 27,12],
+                ['data2', 10, 12, 55, 67, 13, 10,11]
             ],
             type: 'bar', // default type of chart
             groups: [
@@ -257,6 +257,47 @@ $(function(){
     });
     var chart = c3.generate({
         bindto: '#chart-bar-stacked-2020', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 10, 9, 18, 56, 59, 27,12],
+                ['data2', 70, 12, 35, 87, 13, 12,11]
+            ],
+            type: 'bar', // default type of chart
+            groups: [
+                [ 'data1', 'data2']
+            ],
+            colors: {
+                'data1': '#3371ff',
+                'data2': '#ff33d7',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Pendengaran', 'Penglihatan', 'Pertuturan', 'Fizikal', 'Pembelajaran', 'Mental','Pelbagai']
+            },
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0,
+            left: 6,
+        },
+    });
+    var chart = c3.generate({
+        bindto: '#chart-bar-stacked-2021', // id of chart wrapper
         data: {
             columns: [
                 // each columns data
@@ -464,6 +505,45 @@ $(function(){
             top: 0
         },
     });
+    var chart = c3.generate({
+        bindto: '#chart-bar-rotated', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 11, 8, 15, 18, 10],
+                ['data2', 7, 7, 5, 7, 9]
+            ],
+            type: 'bar', // default type of chart
+            colors: {
+                'data1': '#2c83b6',
+                'data2': '#a5d8a2',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Diploma', 'Sarjana Muda','Diploma Lepasan Ijazah',  'Sarjana', 'PhD']
+            },
+            rotated: true,
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0
+        },
+    });
+
     var chart = c3.generate({
         bindto: '#chart-bar-rotated', // id of chart wrapper
         data: {
