@@ -232,15 +232,15 @@ $(function(){
             },
             names: {
                 // name of each serie
-                'data1': 'Lelaki',
-                'data2': 'Perempuan'
+                'data1': 'Layak',
+                'data2': 'Tidak Layak'
             }
         },
         axis: {
             x: {
                 type: 'category',
                 // name of each category
-                categories: ['Pendengaran', 'Penglihatan', 'Pertuturan', 'Fizikal', 'Pembelajaran', 'Mental','Pelbagai']
+                categories: ['Jan', 'Feb', 'Mac', 'Jun', 'Jul', 'Ogos','Sep','Okt','Nov','Dec']
             },
         },
         bar: {
