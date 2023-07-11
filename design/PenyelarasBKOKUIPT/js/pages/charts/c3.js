@@ -471,7 +471,7 @@ c3.generate({
             // each columns data
             ['data1', 53],
             ['data2', 27],
-            ['data2', 20],
+            ['data3', 20]
           
         ],
         type: 'pie', // default type of chart
@@ -485,7 +485,7 @@ c3.generate({
             // name of each serie
             'data1': 'Layak',
             'data2': 'Tidak Layak',
-            'data2': 'Dikembalikan'
+            'data3': 'Dikembalikan'
            
         }
     },
