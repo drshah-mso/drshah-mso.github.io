@@ -173,6 +173,129 @@ $(function(){
             left: 6,
         },
     });
+    var chart = c3.generate({
+        bindto: '#chart-bar-stacked-2022', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 10, 1, 18, 98, 59, 27,12],
+                ['data2', 70, 12, 75, 97, 19, 12,11]
+            ],
+            type: 'bar', // default type of chart
+            groups: [
+                [ 'data1', 'data2']
+            ],
+            colors: {
+                'data1': '#3a33ff',
+                'data2': '#ff3a33',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Pendengaran', 'Penglihatan', 'Pertuturan', 'Fizikal', 'Pembelajaran', 'Mental','Pelbagai']
+            },
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0,
+            left: 6,
+        },
+    });
+    var chart = c3.generate({
+        bindto: '#chart-bar-stacked-2021', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 10, 19, 18, 98, 59, 27,12],
+                ['data2', 70, 12, 75, 87, 13, 12,11]
+            ],
+            type: 'bar', // default type of chart
+            groups: [
+                [ 'data1', 'data2']
+            ],
+            colors: {
+                'data1': '#0c158f',
+                'data2': '#aa3e6b',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Pendengaran', 'Penglihatan', 'Pertuturan', 'Fizikal', 'Pembelajaran', 'Mental','Pelbagai']
+            },
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0,
+            left: 6,
+        },
+    });
+    var chart = c3.generate({
+        bindto: '#chart-bar-stacked-2020', // id of chart wrapper
+        data: {
+            columns: [
+                // each columns data
+                ['data1', 10, 9, 18, 56, 59, 27,12],
+                ['data2', 70, 12, 35, 87, 13, 12,11]
+            ],
+            type: 'bar', // default type of chart
+            groups: [
+                [ 'data1', 'data2']
+            ],
+            colors: {
+                'data1': '#3371ff',
+                'data2': '#ff33d7',
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                // name of each category
+                categories: ['Pendengaran', 'Penglihatan', 'Pertuturan', 'Fizikal', 'Pembelajaran', 'Mental','Pelbagai']
+            },
+        },
+        bar: {
+            width: 10
+        },
+        legend: {
+            show: true, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0,
+            left: 6,
+        },
+    });
     //multiple comparison series
     var chart = c3.generate({
         bindto: '#chart-donut-d', // id of chart wrapper
@@ -222,6 +345,72 @@ $(function(){
             colors: {
                 'data1': '#333eff',
                 'data2': '#8e33ff',
+                
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan',
+             
+            }
+        },
+        axis: {
+        },
+        legend: {
+            show: false, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0
+        },
+    });
+    var chart = c3.generate({
+        bindto: '#chart-2022', // id of chart wrapper
+        data: {
+            type: 'donut', // default type of chart
+
+            columns: [
+                // each columns data
+                ['data1', 70],
+                ['data2', 30],
+            
+            ],            
+            colors: {
+                'data1': '#3a33ff',
+                'data2': '#ff3a33',
+                
+            },
+            names: {
+                // name of each serie
+                'data1': 'Lelaki',
+                'data2': 'Perempuan',
+             
+            }
+        },
+        axis: {
+        },
+        legend: {
+            show: false, //hide legend
+        },
+        padding: {
+            bottom: 0,
+            top: 0
+        },
+    });
+    var chart = c3.generate({
+        bindto: '#chart-2021', // id of chart wrapper
+        data: {
+            type: 'donut', // default type of chart
+
+            columns: [
+                // each columns data
+                ['data1', 50],
+                ['data2', 50],
+            
+            ],            
+            colors: {
+                'data1': '#0c158f',
+                'data2': '#aa3e6b',
                 
             },
             names: {
