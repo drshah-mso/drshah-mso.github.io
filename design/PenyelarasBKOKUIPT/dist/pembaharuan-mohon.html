@@ -434,7 +434,7 @@
                 <!-- Page header section  -->
                 <div class="block-header">
                     <div class="row clearfix">
-                    <div class="col-xl-4 col-lg-5 col-md-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card">
                             <div class="header">
                                 <h2>Jumlah Keseluruhan Permohonan</h2>
@@ -444,131 +444,165 @@
                             </div>
                         </div> 
                     </div>
-                </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1>Pembaharui Permohonan</h1>
-                          
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Jumlah Keseluruhan Permohonan Terkini</h2>
+                                <!--<small class="text-muted">Sales Performance for Online and Offline Revenue <a href="">Learn more</a></small>-->
+                                <ul class="header-dropdown dropdown">
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="d-flex flex-row">
+                                    <div class="pb-3">
+                                        <h5 class="mb-0">50</h5>
+                                        <small class="text-muted font-11">Jumlah Didaftarkan</small>
+                                    </div>
+                                    <div class="pb-3 pl-4 pr-4">
+                                        <h5 class="mb-0">27%</h5>
+                                        <small class="text-muted font-11">Permohonan Aktif</small>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h5 class="mb-0">63%</h5>
+                                        <small class="text-muted font-11">Permohonan Tidak Aktif</small>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <select class="form-control">
+                                            <option selected="selected">Bulan</option>
+                                            <option>Hari</option>
+                                            <option>Tahun</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="bar-chart" style="height: 300px"></div>
+                            </div>
                         </div>
                     </div>
-                    <br>
-                    <div class="row clearfix">
-                        <div class="col-12">
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light page_menu">
-                                <!--<a class="navbar-brand" href="#">M.</a>-->
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fa fa-bars text-muted"></i>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                    <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item vivify swoopInTop delay-150 active"><a class="nav-link" href="">Pembaharui Permohonan Pelajar</a></li>
-                                       
-                                    </ul>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light page_menu">
+                            <!--<a class="navbar-brand" href="#">M.</a>-->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars text-muted"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item vivify swoopInTop delay-150 active"><a class="nav-link" href="">Senarai Pelajar</a></li>
                                    
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="table-responsive invoice_list">
-                                        <table class="table table-hover js-basic-example dataTable">
-                                            <thead>
-                                                <tr> 
-                                                    <th style="width: 20px;">Bil</th>
-                                                    <th>Nama Pelajar</th>
-                                                    <th style="width: 120px;">Jenis Permohonan</th>
-                                                    <th style="width: 80px;">Status Permohonan</th>
-                                                    <th style="width: 100px;">Tindakan</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <span>01</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/images/user.png" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
-                                                            <div class="ml-3">
-                                                                <a href="maklumat-pemohon.html" title="">Ali Bin Abu</a>
-                                                                <p class="mb-0">alibinabu@graduate.utm.my</p>
-                                                            </div>
-                                                        </div>                                        
-                                                    </td>
-                                                    <td>BKOKU</td>
-                                                    <td><span class="badge badge-success ml-0 mr-0">Baru!</span></td>
-                                                    <td>
-                                                        <a href="permohonan-baru.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Perbaharui </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <span>02</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
-                                                            <div class="ml-3">
-                                                                <a href="page-invoices-detail.html" title="">Zoe Baker</a>
-                                                                <p class="mb-0">zoe.baker@um.student.my</p>
-                                                            </div>
-                                                        </div>                                        
-                                                    </td>
-                                                    <td>PPK</td>
-                                                    <td><span class="badge badge-success ml-0 mr-0">BARU!</span></td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-default "title="Print"><i class="fa fa-eye"></i></button>
-                                                        <button type="button" class="btn btn-sm btn-default" title="Delete"><i class="fa fa-trash"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <span>03</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
-                                                            <div class="ml-3">
-                                                                <a href="page-invoices-detail.html" title="">Sarah Binti Hashim</a>
-                                                                <p class="mb-0">h.sarah@uitm.edu.com.my</p>
-                                                            </div>
-                                                        </div>                                        
-                                                    </td>
-                                                    <td>PPK</td>
-                                                    <td><span class="badge badge-success ml-0 mr-0">BARU!</span></td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-default "title="Print"><i class="fa fa-eye"></i></button>
-                                                        <button type="button" class="btn btn-sm btn-default" title="Delete"><i class="fa fa-trash"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <span>04</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="rounded-circle w35 h35">
-                                                            <div class="ml-3">
-                                                                <a href="page-invoices-detail.html" title="">Akmal Bin Mahmod</a>
-                                                                <p class="mb-0">Akmalbinmahmod@usm.edu.com.my</p>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>PPK</td>
-                                                    <td><span class="badge badge-success ml-0 mr-0">Baru</span></td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-default "title="Print"><i class="fa fa-eye"></i></button>
-                                                        <button type="button" class="btn btn-sm btn-default" title="Delete"><i class="fa fa-trash"></i></button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                </ul>
+                               
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="body">
+                                <div class="table-responsive invoice_list">
+                                    <table class="table table-hover js-basic-example dataTable">
+                                        <thead>
+                                            <tr> 
+                                                <th style="width: 20px;">Bil</th>
+                                                <th>Nama Pelajar</th>
+                                                <th style="width: 80px;">ID Permohonan</th>
+                                                <th style="width: 80px;">Tarikh Lulus Permohonan</th>
+                                                <th style="width: 80px;">Tarikh Akhir Pengajian</th>
+                                                <th style="width: 80px;">Status Permohonan</th>
+                                                <th style="width: 80px;">Status Perbaharui Permohonan</th>
+                                                <th style="width: 80px;">Tindakan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span>01</span>
+                                                </td>
+                                                <td>
+                                                    <span>Ali Bin Abu</span>                                              
+                                                </td>
+                                                <td>SARJANABKOKU000011</td>
+                                                <td>6/7/2023</td>
+                                                <td>8/7/2027</td>
+                                                <td>Aktif</td>
+                                                <td> <button type="button" class="btn btn-info ">Belum Perbaharui</button></td>
+                                                <td>
+                                                    <a href="permohonan-baru.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Perbaharui</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>02</span>
+                                                </td>
+                                                <td>
+                                                    <span>Zoe Baker</span>
+                                                        
+                                                           
+                                                                                          
+                                                </td>
+                                                <td>DIPLOMABKOKU002011</td>
+                                                <td>5/7/2022</td>
+                                                <td>4/7/2023</td>
+                                                <td>Tidak Aktif</td>
+                                                <td> <button type="button" class="btn btn-danger ">Tamat</button></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger ">Tamat</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>03</span>
+                                                </td>
+                                                <td>   
+                                                    <span>Sarah Binti Hashim</span>                                  
+                                                                                              
+                                                </td>
+                                                <td>PHDBKOKU202011</td>
+                                                <td>3/7/2021</td>
+                                                <td>4/7/2024</td>
+                                                <td> Aktif</td>
+                                                <td> <button type="button" class="btn btn-default ">Edit</button></td>
+                                                <td>
+                                                    <a href="permohonan-baru.html" class="btn btn-primary btn-round"><i class="icon-pencil"></i> Edit</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>04</span>
+                                                </td>
+                                                <td>
+                                                    <span>Akmal Bin Mahmod</span>   
+                                                  
+                                                          
+                                                </td>
+                                                <td>SARJANABKOKU12011</td>
+                                                <td>1/6/2022</td>
+                                                <td>4/7/2024</td>
+                                                <td> Aktif</td>
+                                                <td> <button type="button" class="btn btn-success ">Telah Dihantar</button></td>
+                                                <td>
+                                                    <a href="permohonan-baru.html" class="btn btn-success"><i class="icon-check"></i> Menunggu Keputusan</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            
                 </div>
             </div>
         </div>
@@ -586,10 +620,10 @@
 <script src="assets/bundles/apexcharts.bundle.js"></script>
 <script src="assets/bundles/jvectormap.bundle.js"></script>
 <script src="assets/vendor/toastr/toastr.js"></script>
-
+<script src="assets/bundles/chartist.bundle.js"></script>
 <!-- Project core js file minify with grunt --> 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
-<script src="../js/index.js"></script>
+
 
 
 
@@ -605,5 +639,7 @@
 
 <script src="../js/pages/forms/form-wizard.js"></script>
 <script src="../js/pages/tables/jquery-datatable.js"></script>
+<script src="../js/pages/charts/c3.js"></script>
+<script src="../js/pages/charts/chartjs.js"></script>
 </body>
 </html>
