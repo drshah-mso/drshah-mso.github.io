@@ -509,6 +509,41 @@ c3.generate({
     },
 });
 c3.generate({
+    bindto: '#chart-pie-kptsn', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 53],
+            ['data2', 27],
+            ['data3', 20]
+          
+        ],
+        type: 'pie', // default type of chart
+        colors: {
+            'data1': '#90ee90', 
+            'data2': '#ff0000',
+            'data3': '#ffa500'
+           
+        },
+        names: {
+            // name of each serie
+            'data1': 'Layak',
+            'data2': 'Tidak Layak',
+            'data3': 'Dikembalikan'
+           
+        }
+    },
+    axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
+c3.generate({
     bindto: '#chart-donut-PPK', // id of chart wrapper
     data: {
         columns: [
