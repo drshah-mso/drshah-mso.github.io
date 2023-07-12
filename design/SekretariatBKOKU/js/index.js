@@ -656,6 +656,47 @@ var chart = c3.generate({
     },
 });
 var chart = c3.generate({
+    bindto: '#chart-bar-stacked-b-2021', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 10, 81, 78, 108, 149, 217,12],
+            ['data2', 70, 192, 75, 97, 219, 152,11]
+        ],
+        type: 'bar', // default type of chart
+        groups: [
+            [ 'data1', 'data2']
+        ],
+        colors: {
+            'data1':'#0c158f',
+            'data2': '#aa3e6b'
+        },
+        names: {
+            // name of each serie
+            'data1': 'Lelaki',
+            'data2': 'Perempuan'
+        }
+    },
+    axis: {
+        x: {
+            type: 'category',
+            // name of each category
+            categories: ['Pendengaran', 'Penglihatan', 'Pertuturan', 'Fizikal', 'Pembelajaran', 'Mental','Pelbagai']
+        },
+    },
+    bar: {
+        width: 10
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 0,
+        top: 0,
+        left: 6,
+    },
+});
+var chart = c3.generate({
     bindto: '#chart-bar-stacked-b-2022', // id of chart wrapper
     data: {
         columns: [
