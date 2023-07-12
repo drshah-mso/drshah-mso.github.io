@@ -436,7 +436,8 @@ c3.generate({
             ['data1', 63],
             ['data2', 44],
             ['data3', 12],
-            ['data4', 14]
+            ['data4', 14],
+            ['data5', 20],
         ],
         type: 'pie', // default type of chart
         colors: {
@@ -444,13 +445,16 @@ c3.generate({
             'data2': '#2c83b6', 
             'data3': '#61bda1', 
             'data4': '#a5d8a2', 
+            'data5': '#aa3e6b', 
         },
         names: {
             // name of each serie
-            'data1': 'darker',
-            'data2': 'blue',
-            'data3': 'lighter',
-            'data4': 'light',
+            'data1': 'Diploma',
+            'data2': 'Diploma Lepasan Ijazah',
+            'data3': 'Sarjana Muda',
+            'data4': 'Sarjana',
+            'data5': 'PhD'
+          
         }
     },
     axis: {
