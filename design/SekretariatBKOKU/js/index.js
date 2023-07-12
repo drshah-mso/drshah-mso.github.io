@@ -697,6 +697,45 @@ var chart = c3.generate({
     },
 });
 var chart = c3.generate({
+    bindto: '#chart-bar-rotated-2022', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 11, 8, 15, 18, 10],
+            ['data2', 7, 7, 5, 7, 9]
+        ],
+        type: 'bar', // default type of chart
+        colors: {
+            'data1': '#3a33ff',
+            'data2': '#ff3a33',
+        },
+        names: {
+            // name of each serie
+            'data1': 'Lelaki',
+            'data2': 'Perempuan'
+        }
+    },
+    axis: {
+        x: {
+            type: 'category',
+            // name of each category
+            categories: ['Diploma', 'Sarjana Muda','Diploma Lepasan Ijazah',  'Sarjana', 'PhD']
+        },
+        rotated: true,
+    },
+    bar: {
+        width: 10
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 0,
+        top: 0
+    },
+});
+
+var chart = c3.generate({
     bindto: '#chart-bar-stacked-b-2022', // id of chart wrapper
     data: {
         columns: [
