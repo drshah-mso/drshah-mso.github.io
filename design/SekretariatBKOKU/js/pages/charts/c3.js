@@ -467,6 +467,39 @@ c3.generate({
         top: 0
     },
 });
+
+c3.generate({
+    bindto: '#chart-pie-PPK', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 63],
+            ['data2', 44],
+           
+        ],
+        type: 'pie', // default type of chart
+        colors: {
+            'data1': '#1c3353', 
+            'data2': '#2c83b6' 
+            
+        },
+        names: {
+            // name of each serie
+            'data1': 'Kolej Komuniti',
+            'data2': 'Politeknik'
+          
+        }
+    },
+    axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
 c3.generate({
     bindto: '#chart-donut-BKOKU', // id of chart wrapper
     data: {
