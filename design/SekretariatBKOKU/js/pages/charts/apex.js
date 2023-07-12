@@ -1676,6 +1676,7 @@ $(document).ready(function() {
         },
         colors: ['#004660', '#09536e', '#1b6079', '#34738a'],
         series: [44, 55, 41, 17],
+        labels:[ 'Baru', 'Saringan', 'Dikembalikan','Disokong' ],
         responsive: [{
             breakpoint: 480,
             options: {
