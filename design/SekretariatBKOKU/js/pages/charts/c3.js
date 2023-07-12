@@ -436,7 +436,8 @@ c3.generate({
             ['data1', 63],
             ['data2', 44],
             ['data3', 12],
-            ['data4', 14]
+            ['data4', 14],
+            ['data5', 20],
         ],
         type: 'pie', // default type of chart
         colors: {
@@ -444,13 +445,49 @@ c3.generate({
             'data2': '#2c83b6', 
             'data3': '#61bda1', 
             'data4': '#a5d8a2', 
+            'data5': '#aa3e6b', 
         },
         names: {
             // name of each serie
-            'data1': 'darker',
-            'data2': 'blue',
-            'data3': 'lighter',
-            'data4': 'light',
+            'data1': 'Diploma',
+            'data2': 'Diploma Lepasan Ijazah',
+            'data3': 'Sarjana Muda',
+            'data4': 'Sarjana',
+            'data5': 'PhD'
+          
+        }
+    },
+    axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
+
+c3.generate({
+    bindto: '#chart-pie-PPK', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 63],
+            ['data2', 44],
+           
+        ],
+        type: 'pie', // default type of chart
+        colors: {
+            'data1': '#1c3353', 
+            'data2': '#2c83b6' 
+            
+        },
+        names: {
+            // name of each serie
+            'data1': 'Kolej Komuniti',
+            'data2': 'Politeknik'
+          
         }
     },
     axis: {
@@ -499,6 +536,126 @@ c3.generate({
         }
     },
     axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
+c3.generate({
+    bindto: '#chart-donut-PPK', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 5],
+            ['data2', 15],
+            ['data3', 20],
+            ['data4', 30],
+            ['data5', 10],
+            ['data6', 10],
+            ['data7', 10]
+        ],
+        type: 'donut', // default type of chart
+        colors: {
+            'data1': '#64c4df',
+            'data2': '#64dfbc',
+            'data3': '#daf7a6',
+            'data4': '#ffc300',
+            'data5': '#ff5733',
+            'data6': '#c70029',
+            'data7': '#c70039',
+        },
+        names: {
+            // name of each serie
+            'data1': 'Deraf',
+            'data2': 'Baru',
+            'data3': 'Saringan',
+            'data4': 'Disokong',
+            'data5': 'Dikembalikan',
+            'data6': 'Layak',
+            'data7': 'Tidak Layak'
+
+        }
+    },
+    axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
+c3.generate({
+    bindto: '#chart-pie-kptsn', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 53],
+            ['data2', 27],
+            ['data3', 20]
+          
+        ],
+        type: 'pie', // default type of chart
+        colors: {
+            'data1': '#2e8b57',
+            'data2': '#fdbd01',
+            'data3': '#f70d1a'
+           
+        },
+        names: {
+            // name of each serie
+            'data1': 'Layak',
+            'data2': 'Tidak Layak',
+            'data3': 'Dikembalikan'
+           
+        }
+    },
+    axis: {
+    },
+    legend: {
+        show: true, //hide legend
+    },
+    padding: {
+        bottom: 20,
+        top: 0
+    },
+});
+c3.generate({
+    bindto: '#chart-bar-kptsn', // id of chart wrapper
+    data: {
+        columns: [
+            // each columns data
+            ['data1', 11, 8, 15, 18, 19, 17],
+            ['data2', 7, 7, 5, 7, 9, 12],
+            ['data3', 1, 2, 3, 1, 2, 3],
+        ],
+        type: 'bar', // default type of chart
+        colors: {
+            'data1': '#2e8b57',
+            'data2': '#fdbd01',
+            'data3': '#f70d1a'
+        },
+        names: {
+            // name of each serie
+            'data1': 'Layak',
+            'data2': 'Dikembalikan',
+            'data3': 'Tidak Layak'
+        }
+    },
+    axis: {
+        x: {
+            type: 'category',
+            // name of each category
+            categories: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun']
+        },
+    },
+    bar: {
+        width: 16
     },
     legend: {
         show: true, //hide legend

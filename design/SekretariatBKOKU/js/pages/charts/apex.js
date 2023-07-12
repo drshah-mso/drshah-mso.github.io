@@ -1676,6 +1676,7 @@ $(document).ready(function() {
         },
         colors: ['#004660', '#09536e', '#1b6079', '#34738a'],
         series: [44, 55, 41, 17],
+        labels:[ 'Baru', 'Saringan', 'Dikembalikan','Disokong' ],
         responsive: [{
             breakpoint: 480,
             options: {
@@ -1697,6 +1698,41 @@ $(document).ready(function() {
     chart.render();
 });
 
+// SIMPLE DONUT
+$(document).ready(function() {
+    var options = {
+        chart: {
+            height: 300,
+            type: 'donut',
+        },
+        legend: {
+            position: 'top',
+            horizontalAlign: 'left',
+            show: true,
+        },
+        colors: ['#004660', '#09536e', '#1b6079', '#34738a'],
+        series: [40, 55, 2, 67],
+        labels:[ 'Baru', 'Saringan', 'Dikembalikan','Disokong' ],
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    }
+
+   var chart = new ApexCharts(
+        document.querySelector("#apex-simple-donut-PPK"),
+        options
+    );
+    
+    chart.render();
+});
 // CIRCLE CHART
 $(document).ready(function() {
     var options = {

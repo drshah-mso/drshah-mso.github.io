@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>Sekretariat BKOKU KPT | Laporan</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content="Mooli Bootstrap 4x admin is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities.">
+<meta name="author" content="GetBootstrap, design by: puffintheme.com">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- VENDOR CSS -->
+<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/vendor/animate-css/vivify.min.css">
+
+<link rel="stylesheet" href="assets/vendor/chartist/css/chartist.min.css">
+<link rel="stylesheet" href="assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="assets/vendor/c3/c3.min.css"/>
+<link rel="stylesheet" href="assets/vendor/toastr/toastr.min.css">
+<link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
+<link rel="stylesheet" href="assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css">
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="assets/css/mooli.min.css">
+
+</head>
+<body>
+    
+<div id="body" class="theme-cyan">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30"><img src="assets/images/icon.svg" width="40" height="40" alt="Mooli"></div>
+            <p>Tunggu Sebentar</p>        
+        </div>
+    </div>
+
+    <!-- Theme Setting -->
+    <div class="themesetting">
+        <a href="javascript:void(0);" class="theme_btn"><i class="fa fa-gear fa-spin"></i></a>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <ul class="choose-skin list-unstyled mb-0">
+                    <li data-theme="green"><div class="green"></div></li>
+                    <li data-theme="orange"><div class="orange"></div></li>
+                    <li data-theme="blush"><div class="blush"></div></li>
+                    <li data-theme="cyan" class="active"><div class="cyan"></div></li>
+                    <li data-theme="timber"><div class="timber"></div></li>
+                    <li data-theme="blue"><div class="blue"></div></li>
+                    <li data-theme="amethyst"><div class="amethyst"></div></li>
+                </ul>
+            </li>
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+                <span>Light Sidebar</span>
+                <label class="switch sidebar_light">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+                <span>Gradient</span>
+                <label class="switch gradient_mode">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+                <span>Dark Mode</span>
+                <label class="switch dark_mode">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+                <span>RTL version</span>
+                <label class="switch rtl_mode">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+        </ul>
+        <hr>
+        <div>
+            <a href="javascript:void(0);" class="btn btn-dark btn-block" target="_blank">Buy this item</a>
+            <a href="javascript:void(0);" target="_blank" class="btn btn-primary theme-bg gradient btn-block">View Portfolio</a>
+        </div>
+    </div>
+
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+
+    <div id="wrapper">
+
+        <!-- Page top navbar -->
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-left">
+                    <div class="navbar-btn">
+                        <a href="index.html"><img src="assets/images/icon.svg" alt="Mooli Logo" class="img-fluid logo"></a>
+                        <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-align-left"></i></button>
+                    </div>
+                </div>
+                <div class="navbar-right">
+                    <div id="navbar-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="notification-dot info">4</span>
+                                </a>
+                                <ul class="dropdown-menu feeds_widget mt-0 animation-li-delay">
+                                    <li class="header theme-bg gradient mt-0 text-light">You have 4 New Notifications</li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="mr-4"><i class="fa fa-check text-red"></i></div>
+                                            <div class="feeds-body">
+                                                <h4 class="title text-danger">Issue Fixed <small class="float-right text-muted font-12">9:10 AM</small></h4>
+                                                <small>WE have fix all Design bug with Responsive</small>
+                                            </div>
+                                        </a>
+                                    </li>                               
+                                    <li>
+                                        <a href="#">
+                                            <div class="mr-4"><i class="fa fa-user text-info"></i></div>
+                                            <div class="feeds-body">
+                                                <h4 class="title text-info">New User <small class="float-right text-muted font-12">9:15 AM</small></h4>
+                                                <small>I feel great! Thanks team</small>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="mr-4"><i class="fa fa-question-circle text-warning"></i></div>
+                                            <div class="feeds-body">
+                                                <h4 class="title text-warning">Server Warning <small class="float-right text-muted font-12">9:17 AM</small></h4>
+                                                <small>Your connection is not private</small>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="mr-4"><i class="fa fa-thumbs-o-up text-success"></i></div>
+                                            <div class="feeds-body">
+                                                <h4 class="title text-success">2 New Feedback <small class="float-right text-muted font-12">9:22 AM</small></h4>
+                                                <small>It will give a smart finishing to your site</small>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hidden-xs"><a href="javascript:void(0);" id="btnFullscreen" class="icon-menu"><i class="fa fa-arrows-alt"></i></a></li>
+                            <li><a href="page-login.html" class="icon-menu"><i class="fa fa-power-off"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recent_searche" style="display: none;">
+                    <div class="card mb-0">
+                        <div class="header">
+                            <h2>Recent search result</h2>
+                            <ul class="header-dropdown dropdown">
+                                <li><a href="javascript:void(0);">Clear data</a></li>
+                                <li><a href="page-search-results.html"><i class="fa fa-external-link"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-l-0 p-r-0">
+                                    <h6><a href="#">Crush it - Bootstrap Admin Application Template &amp; Ui Kit</a></h6>
+                                    <p class="text-muted">It is a long established fact that a reader will be distracted.</p>
+                                    <div class="text-muted font-13">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><span class="badge badge-secondary margin-0">React</span></li>
+                                            <li class="list-inline-item">Dec 27 2020</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Main left sidebar menu -->
+        <div id="left-sidebar" class="sidebar">
+            <a href="#" class="menu_toggle"><i class="fa fa-angle-left"></i></a>
+            <div class="navbar-brand">
+                <a href="index.html"><img src="assets/images/icon.svg" alt="Mooli Logo" class="img-fluid logo"><span>Sistem BKOKU</span></a>
+                <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i class="fa fa-close"></i></button>
+            </div>
+            <div class="sidebar-scroll">
+                <div class="user-account">
+                    <div class="user_div">
+                        <img src="assets/images/HR.png" class="user-photo" alt="Gambar Profil Sekretariat BKOKU KPT">
+                    </div>
+                    <div class="dropdown">
+                        <span>Sekretariat BKOKU KPT</span>
+                    </div>
+                </div>  
+                <nav id="left-sidebar-nav" class="sidebar-nav">
+                    <ul id="main-menu" class="metismenu animation-li-delay">
+                        <li class="header">Halaman</li>
+                        <li ><a href="index.html"><i class="fa fa-dashboard"></i> <span>Utama</span></a></li>
+                        <li class="header">Permohonan</li>
+                        <li><a href="permohonan.html"><i class="fa fa-files-o"></i> <span>Status Permohonan</span></a></li>
+                        <li><a href="saring-permohonan.html"><i class="fa fa-folder-o"></i> <span>Saring Permohonan</span></a></li>
+                        <li><a href="sahkan-permohonan.html"><i class="fa fa-check-circle-o"></i> <span>Pengesahan Permohonan</span></a></li>
+                        <li><a href="kptsn-mohon.html"><i class="fa fa-list-alt"></i> <span>Keputusan Permohonan</span></a></li> 
+                        <li><a href="kembali-permohonan.html"><i class="fa fa-mail-reply"></i> <span>Kembalikan Permohonan</span></a></li>
+                        <li class="header">Tuntutan</li>
+                        <li><a href="tuntutan.html"><i class="fa fa-money"></i> <span>Status Tuntutan</span></a></li>
+                        <li><a href="saring-tuntutan.html"><i class="fa fa-money"></i> <span>Saring Tuntutan</span></a></li>
+                        <li><a href="sahkan-tuntutan.html"><i class="fa fa-money"></i> <span>Pengesahan Tuntutan</span></a></li>
+                        <li><a href="kptsn-tuntut.html"><i class="fa fa-list-alt"></i> <span>Keputusan Tuntutan</span></a></li>
+                        <li><a href="kembali-tuntutan.html"><i class="fa fa-money"></i> <span>Kembalikan Tuntutan</span></a></li>
+                        <li class="header">Laporan</li>
+                        <li class="active"><a href="laporan.html"><i class="fa fa-list-alt"></i> <span>Laporan</span></a></li>
+                        <li class="header">Tetapan</li>
+                        <li><a href="tetapan.html"><i class="fa fa-cogs"></i> <span>Tetapan</span></a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </div>
+        <div id="main-content">
+            <div class="container-fluid">
+                <!-- Page header section  -->
+                <div class="block-header">
+                    <div class="row clearfix">
+                        <!-- <div class="col-lg-4 col-md-12 col-sm-12">
+                            <h1>Utama</h1>
+                           
+                        </div> -->
+                        
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-12">
+                        <div class="section_title">
+                            <div class="mr-3">
+                                <h3>Laporan Tuntutan PPK 2023</h3>
+                                <!-- <small>Statistics, Predictive Analytics Data Visualization, Big Data Analytics, etc.</small> -->
+                            </div>
+                            <div>
+                                <div class="btn-group mb-3">
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">2021</button>
+                                        <div class="dropdown-menu">
+                                            <!-- <a class="dropdown-item" href="laporan-mohon-2020.html">2020</a>
+                                            <a class="dropdown-item" href="laporan-mohon-2021.html">2021</a>
+                                            <a class="dropdown-item" href="laporan-mohon-2022.html">2022</a>
+                                            <a class="dropdown-item" href="laporan-mohon.html">2023</a> -->
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-send"></i> <span class="hidden-md">Laporan</span></button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> <span class="hidden-md">Export</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Tuntutan PPK</h2>
+                            <small class="text-muted">Berdasarkan Jantina</small>
+                        </div>
+                        <div class="body text-center">
+                            <div id="chart-2021" style="height: 310px"></div>
+                            
+                            <div class="row clearfix">
+                                <div class="col-6">
+                                    <h6 class="mb-0">3095</h6>
+                                    <small class="text-muted">Lelaki</small>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="mb-0">2763</h6>
+                                    <small class="text-muted">Perempuan</small>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Status Tuntutan</h2>
+                            <small class="font-12">Berdasarkan kategori OKU (PPK)</small>
+                            <ul class="header-dropdown dropdown">
+                                <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu theme-bg gradient">
+                                        <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="d-flex flex-row">
+                                <div class="pb-3">
+                                    <h5 class="mb-0">956</h5>
+                                    <small class="text-muted font-11">Jumlah permohonan</small>
+                                </div>
+                                
+                                <div class="ml-auto">
+                                    <div class="btn-group btn-group-sm">
+                                        <button type="button" class="btn btn-sm btn-default">H</button>
+                                        <button type="button" class="btn btn-sm btn-primary theme-bg gradient">B</button>
+                                        <button type="button" class="btn btn-sm btn-default">T</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="chart-bar-stacked-2021" style="height: 320px"></div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+               
+                <div class="row clearfix row-deck">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Jumlah Keseluruhan Tuntutan</h2>
+                                <small class="text-muted font-12">Permohonan bermula dari 2020 sehingga 2023</small>
+                                <ul class="header-dropdown dropdown">
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="d-flex flex-row">
+                                    <div class="pb-3">
+                                        <h5 class="mb-0">3,056</h5>
+                                        <small class="text-muted font-11">Jumlah Pemohon</small>
+                                    </div>
+                                    <div class="pb-3 pl-4 pr-4">
+                                        <h5 class="mb-0">1,098</h5>
+                                        <small class="text-muted font-11">Jumlah Permohonan Aktif</small>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-sm btn-default">Hari</button>
+                                            <button type="button" class="btn btn-sm btn-default">Bulan</button>
+                                            <button type="button" class="btn btn-sm btn-primary theme-bg gradient">Tahun</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="flotChart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Tuntutan mengikut Peringkat Pengajian</h2>
+                                <small class="font-12">Pecahan mengikut Peringkat Pengajian dari Diploma sehingga PHD</small>
+                            </div>
+                            <div class="body">
+                                <div class="d-flex flex-row">
+                                    <div class="pb-3">
+                                        <h5 class="mb-0">1356</h5>
+                                        <small class="text-muted font-11">Jumlah Pelajar Lelaki</small>
+                                    </div>
+                                    <div class="pb-3 pl-4 pr-4">
+                                        <h5 class="mb-0">1198</h5>
+                                        <small class="text-muted font-11">Jumlah Pelajar Perempuan</small>
+                                    </div>
+                                   
+                                    <div class="ml-auto">
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-sm btn-default">H</button>
+                                            <button type="button" class="btn btn-sm btn-primary theme-bg gradient">B</button>
+                                            <button type="button" class="btn btn-sm btn-default">T</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chart-bar-rotated-2021" style="height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix row-deck">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Yuran Tuntutan</h2>
+                                <small class="text-muted">yang telah dituntut berdasarkan</small>
+                            </div>
+                            <div class="body">
+                                <table class="table table-striped mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Yuran Pendaftaran Pengajian 
+                                                <div class="progress progress-xs mt-2">
+                                                    <div class="progress-bar" style="width: 78%"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right"><span class="text-muted">2225</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Yuran Perpustakaan
+                                                <div class="progress progress-xs mt-2">
+                                                    <div class="progress-bar" style="width: 20%"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right"><span class="text-muted">182</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Yuran Peperiksaan
+                                                <div class="progress progress-xs mt-2">
+                                                    <div class="progress-bar" style="width: 58%"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right"><span class="text-muted">587</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Yuran Komputer
+                                                <div class="progress progress-xs mt-2">
+                                                    <div class="progress-bar" style="width: 65%"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right"><span class="text-muted">2520</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Yuran Peralatan/ Bahan Makmal
+                                                <div class="progress progress-xs mt-2">
+                                                    <div class="progress-bar" style="width: 65%"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right"><span class="text-muted">4520</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Yuran Perkhidmatan
+                                                <div class="progress progress-xs mt-2">
+                                                    <div class="progress-bar" style="width: 65%"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right"><span class="text-muted">2520</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Keseluruhan Tuntutan</h2>
+                                <small class="font-12">Berdasarkan permohonan aktif</small>
+                            </div>
+                            <div class="body">
+                                <div id="chart-donut-d-2021" style="height: 220px"></div>
+                                <div class="mt-2">
+                                    <div class="form-group">
+                                        <label class="d-block">Deraf <span class="float-right">10</span></label>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #2c83b6;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="d-block">Belum Memohon <span class="float-right">23</span></label>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 20%; background-color: #a5d8a2;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <label class="d-block">Telah Dihantar <span class="float-right">98</span></label>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width: 85%; background-color: #9367b4;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Status Tuntutan</h2>
+                                <small class="font-12">Berdasarkan jumlah yang dihantar dan dalam saringan</small>
+                                <ul class="header-dropdown dropdown">
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                             <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                             <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                             <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                             <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                             <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="d-flex flex-row">
+                                    <div class="pb-3">
+                                        <h5 class="mb-0">896</h5>
+                                        <small class="text-muted font-11">Jumlah tuntutan yang telah dihantar</small>
+                                    </div>
+                                    <div class="pb-3 pl-4 pr-4">
+                                        <h5 class="mb-0">999</h5>
+                                        <small class="text-muted font-11">Jumlah tuntutan dalam saringan</small>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-sm btn-default">H</button>
+                                            <button type="button" class="btn btn-sm btn-primary theme-bg gradient">B</button>
+                                            <button type="button" class="btn btn-sm btn-default">T</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chart-bar-stacked-b-2021" style="height: 320px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Javascript -->
+<script src="assets/bundles/libscripts.bundle.js"></script>    
+<script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+<!-- Vedor js file and create bundle with grunt  --> 
+<script src="assets/bundles/flotscripts.bundle.js"></script><!-- flot charts Plugin Js -->
+<script src="assets/bundles/c3.bundle.js"></script>
+<script src="assets/bundles/apexcharts.bundle.js"></script>
+<script src="assets/bundles/jvectormap.bundle.js"></script>
+<script src="assets/vendor/toastr/toastr.js"></script>
+<script src="assets/bundles/chartist.bundle.js"></script>
+<script src="assets/bundles/knob.bundle.js"></script>
+
+<!-- Project core js file minify with grunt --> 
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="../js/index.js"></script>
+<!-- <script src="../js/index4.js"></script> -->
+
+
+
+<!-- Vedor js file and create bundle with grunt  --> 
+
+<script src="assets/bundles/datatablescripts.bundle.js"></script>
+<script src="assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
+<script src="assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
+<script src="assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
+<script src="assets/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
+<script src="assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
+<script src="assets/vendor/sweetalert/sweetalert.min.js"></script><!-- SweetAlert Plugin Js --> 
+
+
+
+<script src="../js/pages/tables/jquery-datatable.js"></script>
+<script src="../js/pages/charts/c3.js"></script>
+<script src="../js/pages/charts/chartjs.js"></script>
+</body>
+</html>

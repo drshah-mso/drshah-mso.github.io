@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-<title>Penyelaras IPT | Utama</title>
+<title>Pentadbir Sistem | Sistem Integrasi</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<meta name="description" content="Bantuan Kewangan Pelajar Orang Kurang Upaya(OKU) Di Institusi Pengajian Tinggi (IPT)">
-<meta name="author" content="Prototype Mockup">
+<meta name="description" content="">
+<meta name="author" content="">
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- VENDOR CSS -->
@@ -15,16 +15,6 @@
 <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/vendor/animate-css/vivify.min.css">
 
-<link rel="stylesheet" href="assets/vendor/chartist/css/chartist.min.css">
-<link rel="stylesheet" href="assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
-<link rel="stylesheet" href="assets/vendor/c3/c3.min.css"/>
-<link rel="stylesheet" href="assets/vendor/toastr/toastr.min.css">
-<link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
-
-<link rel="stylesheet" href="assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css">
-<link rel="stylesheet" href="assets/vendor/jquery-datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css">
-<link rel="stylesheet" href="assets/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css">
-<link rel="stylesheet" href="assets/vendor/sweetalert/sweetalert.css"/>
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="assets/css/mooli.min.css">
 
@@ -32,11 +22,12 @@
 <body>
     
 <div id="body" class="theme-cyan">
+
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="m-t-30"><img src="assets/images/icon.svg" width="40" height="40" alt="Mooli"></div>
-            <p>Please wait...</p>        
+            <p>Tunggu Sebentar...</p>        
         </div>
     </div>
 
@@ -104,19 +95,14 @@
                         <a href="index.html"><img src="assets/images/icon.svg" alt="Mooli Logo" class="img-fluid logo"></a>
                         <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-align-left"></i></button>
                     </div>
-                    
+                    <!-- <form id="navbar-search" class="navbar-form search-form">
+                        <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
+                        <input value="" class="form-control" placeholder="Search here..." type="text">                    
+                    </form> -->
                 </div>
                 <div class="navbar-right">
                     <div id="navbar-menu">
                         <ul class="nav navbar-nav">
-                            
-                            <li class="dropdown hidden-xs">
-                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-                                    <i class="fa fa-envelope-o"></i>
-                                    <span class="notification-dot msg">4</span>
-                                </a>
-
-                            </li>
                             <li class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
                                     <i class="fa fa-bell-o"></i>
@@ -162,7 +148,17 @@
                                     </li>
                                 </ul>
                             </li>
-                            
+                            <li class="dropdown language-menu hidden-xs">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown"><i class="fa fa-language"></i></a>
+                                <div class="dropdown-menu language_widget mt-0">
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);"><img src="assets/images/flag/us.svg" alt="US English" > US English</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);"><img src="assets/images/flag/gb.svg" alt="UK English" > UK English</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);"><img src="assets/images/flag/russia.svg" alt="Russian" > Russian</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);"><img src="assets/images/flag/arabia.svg" alt="Arabic" > Arabic</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);"><img src="assets/images/flag/france.svg" alt="French" > French</a>
+                                </div>
+                            </li>
                             <li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="fa fa-comments-o"></i></a></li>
                             <li class="hidden-xs"><a href="javascript:void(0);" id="btnFullscreen" class="icon-menu"><i class="fa fa-arrows-alt"></i></a></li>
                             <li><a href="page-login.html" class="icon-menu"><i class="fa fa-power-off"></i></a></li>
@@ -216,54 +212,49 @@
                 </div>
             </div>
         </nav>
+
         <!-- Main left sidebar menu -->
         <div id="left-sidebar" class="sidebar">
             <a href="#" class="menu_toggle"><i class="fa fa-angle-left"></i></a>
             <div class="navbar-brand">
                 <a href="index.html"><img src="assets/images/icon.svg" alt="Mooli Logo" class="img-fluid logo"><span>Sistem BKOKU</span></a>
-                <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i class="fa fa-close"></i></button>
+                <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i class="lnr lnr-menu fa fa-chevron-circle-left"></i></button>
             </div>
             <div class="sidebar-scroll">
                 <div class="user-account">
                     <div class="user_div">
-                        <img src="assets/images/hr2.png" class="user-photo" alt="User Profile Picture">
+                        <img src="assets/images/user.png" class="user-photo" alt="User Profile Picture">
                     </div>
                     <div class="dropdown">
-                        <span>Penyelaras BKOKU IPT,</span>
-                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Julia Binti Syamsul</strong></a>
+                        <span>Pentadbir Sistem,</span>
+                        <!-- <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Alan Green</strong></a>
                         <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
-                            <!--<li><a href="page-profile.html"><i class="fa fa-user"></i>My Profile</a></li>-->
+                            <li><a href="page-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
                             <li><a href="app-inbox.html"><i class="fa fa-envelope"></i>Messages</a></li>
                             <li><a href="setting.html"><i class="fa fa-gear"></i>Settings</a></li>
                             <li class="divider"></li>
                             <li><a href="page-login.html"><i class="fa fa-power-off"></i>Logout</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>  
                 <nav id="left-sidebar-nav" class="sidebar-nav">
                     <ul id="main-menu" class="metismenu animation-li-delay">
-                        <li class="header">Main</li>
-                        <li><a href="index.html"><i class="fa fa-dashboard"></i> <span>Utama</span></a></li>
-                        <li class="header">Permohonan</li>
-                        <li><a href="status-mohon-bkoku.html"><i class="fa fa-tasks"></i> <span>Status Permohonan BKOKU</span></a></li>
-                        <!--<li><a href="status-mohon-ppk.html"><i class="fa fa-tasks"></i> <span>Status Permohonan PPK</span></a></li>-->
-                        <li><a href="mohon-baru.html"><i class="fa fa-folder"></i> <span>Permohonan Baru</span></a></li>
-                        <li class="active"><a href="pembaharuan-mohon.html"><i class="fa fa-address-book"></i> <span>Pembaharuan Permohonan</span></a></li>     
-                        <li><a href="kptsn-mohon.html"><i class="fa fa-list-alt"></i> <span>Keputusan Permohonan</span></a></li>              
-                        <li class="header">Tuntutan</li>
-                        <li ><a href="status-tuntut.html"><i class="fa fa-money"></i> <span>Status Tuntutan</span></a></li>
-                        <li><a href="tuntut-baru.html"><i class="fa fa-folder"></i> <span>Tuntutan Baru</span></a></li>
-                        <li><a href="kptsn-tuntut.html"><i class="fa fa-list-alt"></i> <span>Keputusan Tuntutan</span></a></li>
-                        <li class="header">Laporan</li>
-                        <li><a href="laporan-mohon.html"><i class="fa fa-file"></i> <span>Laporan Permohonan</span></a></li>
-                        <li><a href="laporan-tuntut.html"><i class="fa fa-file-text"></i> <span>Laporan Tuntutan</span></a></li>    
+                        <li class="header">Halaman</li>
+                        <li ><a href="index.html"><i class="fa fa-dashboard"></i> <span>Utama</span></a></li>
+                        <li class="header">Tetapan</li>
+                        <li><a href="adsis-user.html"><i class="fa fa-users"></i> <span>Daftar Pengguna</span></a></li>
+                        <li><a href="adsis-uruser.html"><i class="fa fa-user"></i> <span>Urus Pengguna</span></a></li>
+                        <li class="active"><a href="adsis-intsis.html"><i class="fa fa-desktop"></i> <span>Integrasi Sistem</span></a></li>
+                        <li><a href="adsis-mqaint.html"><i class="fa fa-database"></i> <span>Urus Integrasi Sistem MQA</span></a></li>
                     </ul>
-                </nav>      
+                </nav>     
             </div>
         </div>
+
         <!-- Right bar chat  -->
         <div id="rightbar" class="rightbar">
             <div class="slim_scroll">
+                
                 <div class="chat_list">
                     <form>
                         <div class="input-group c_input_group">
@@ -354,11 +345,150 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="tab-pane vivify fadeIn" id="chat-Groups">
+                                <ul class="right_chat list-unstyled mb-0 animation-li-delay">
+                                    <li class="online">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">PHP Groups<small class="text-muted font-12">10 min</small></span>
+                                                <span class="message">How do you do?</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="offline">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Family Groups <small class="text-muted font-12">18 min</small></span>
+                                                <span class="message">I've forgotten how it felt before</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="offline">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar1.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Friends holic <small class="text-muted font-12">23 min</small></span>
+                                                <span class="message">Wasup for the third time like...</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="offline">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">CL City 2 <small class="text-muted font-12">45 min</small></span>
+                                                <span class="message">How do you do?</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane vivify fadeIn" id="chat-Contact">
+                                <ul class="right_chat list-unstyled mb-0 animation-li-delay">
+                                    <li class="offline">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">John Smith <small class="text-muted"><i class="fa fa-star"></i></small></span>
+                                                <span class="message">johnsmith@info.com</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="offline">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar1.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Merri Diamond <small class="text-muted"><i class="fa fa-heart"></i></small></span>
+                                                <span class="message">hermanbeck@info.com</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="online">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Louis Henry <small class="text-muted"><i class="fa fa-star"></i></small></span>
+                                                <span class="message">maryadams@info.com</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="online">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Andrew Patrick <small class="text-muted"><i class="fa fa-star"></i></small></span>
+                                                <span class="message">mikethimas@info.com</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="online">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar3.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Claire Peters <small class="text-muted"><i class="fa fa-heart"></i></small></span>
+                                                <span class="message">clairepeters@info.com</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="online">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Debra Stewart <small class="text-muted"><i class="fa fa-star"></i></small></span>
+                                                <span class="message">It’s not that bad...</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="offline">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Lisa Garett <small class="text-muted"><i class="fa fa-star"></i></small></span>
+                                                <span class="message">eringonzales@info.com</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="online">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Louis Henry <small class="text-muted"><i class="fa fa-star"></i></small></span>
+                                                <span class="message">susiewillis@info.com</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                    <li class="online">
+                                        <a href="javascript:void(0);" class="media">
+                                            <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">Debra Stewart <small class="text-muted"><i class="fa fa-star"></i></small></span>
+                                                <span class="message">johnsmith@info.com</span>
+                                                <span class="badge badge-outline status"></span>
+                                            </div>
+                                        </a>                            
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
+
         <!-- Stiky note div  -->
         <div class="sticky-note">
             <a href="javascript:void(0);" class="right_note"><i class="fa fa-close"></i></a>
@@ -435,218 +565,85 @@
                 <div class="block-header">
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1>Pembaharuan Permohonan</h1>
-                          
+                            <h1>Sistem Integrasi</h1>
                         </div>
-                    </div>
-                    <br>
-                    <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Jumlah Keseluruhan Permohonan</h2>
-                            </div>
-                            <div class="body">
-                                <div id="chart-pie" style="height: 380px"></div>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Jumlah Keseluruhan Permohonan Terkini</h2>
-                                <!--<small class="text-muted">Sales Performance for Online and Offline Revenue <a href="">Learn more</a></small>-->
-                                <ul class="header-dropdown dropdown">
-                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu theme-bg gradient">
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
-                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="d-flex flex-row">
-                                    <div class="pb-3">
-                                        <h5 class="mb-0">50</h5>
-                                        <small class="text-muted font-11">Jumlah Didaftarkan</small>
-                                    </div>
-                                    <div class="pb-3 pl-4 pr-4">
-                                        <h5 class="mb-0">45</h5>
-                                        <small class="text-muted font-11">Permohonan Aktif</small>
-                                    </div>
-                                    <div class="pb-3">
-                                        <h5 class="mb-0">48</h5>
-                                        <small class="text-muted font-11">Permohonan Tidak Aktif</small>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <select class="form-control">
-                                            <option selected="selected">Bulan</option>
-                                            <option>Hari</option>
-                                            <option>Tahun</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div id="bar-chart" style="height: 300px"></div>
-                            </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 text-lg-right">
+                            
                         </div>
                     </div>
                 </div>
-                <div class="row clearfix">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light page_menu">
-                            <!--<a class="navbar-brand" href="#">M.</a>-->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fa fa-bars text-muted"></i>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item vivify swoopInTop delay-150 active"><a class="nav-link" href="">Senarai Keseluruhan Permohonan</a></li>
-                                   
-                                </ul>
-                               
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="body">
-                                <div class="table-responsive invoice_list">
-                                    <table class="table table-hover js-basic-example dataTable">
-                                        <thead>
-                                            <tr> 
-                                                <th style="width: 20px;">Bil</th>
-                                                <th>Nama Pelajar</th>
-                                                <th style="width: 80px;">ID Permohonan</th>
-                                                <th style="width: 80px;">Tarikh Lulus Permohonan</th>
-                                                <th style="width: 80px;">Tarikh Akhir Pengajian</th>
-                                                <th style="width: 80px;">Status Permohonan</th>
-                                                <th style="width: 80px;">Status Perbaharui Permohonan</th>
-                                                <th style="width: 80px;">Tindakan</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <span>01</span>
-                                                </td>
-                                                <td>
-                                                    <span>Ali Bin Abu</span>                                              
-                                                </td>
-                                                <td>SARJANABKOKU000011</td>
-                                                <td>6/7/2023</td>
-                                                <td>8/7/2027</td>
-                                                <td>Aktif</td>
-                                                <td> <button type="button" class="btn btn-info ">Belum Perbaharui</button></td>
-                                                <td>
-                                                    <a href="baharui-Ali.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Perbaharui</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span>02</span>
-                                                </td>
-                                                <td>
-                                                    <span>Zoe Baker</span>
-                                                        
-                                                           
-                                                                                          
-                                                </td>
-                                                <td>DIPLOMABKOKU002011</td>
-                                                <td>5/7/2022</td>
-                                                <td>4/7/2023</td>
-                                                <td>Tidak Aktif</td>
-                                                <td> <button type="button" class="btn btn-danger ">Tamat</button></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-danger ">Tamat</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span>03</span>
-                                                </td>
-                                                <td>   
-                                                    <span>Sarah Binti Hashim</span>                                  
-                                                                                              
-                                                </td>
-                                                <td>PHDBKOKU202011</td>
-                                                <td>3/7/2021</td>
-                                                <td>4/7/2024</td>
-                                                <td> Aktif</td>
-                                                <td> <button type="button" class="btn btn-default ">Edit</button></td>
-                                                <td>
-                                                    <a href="baharui-sarah.html" class="btn btn-primary btn-round"><i class="icon-pencil"></i> Edit</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span>04</span>
-                                                </td>
-                                                <td>
-                                                    <span>Akmal Bin Mahmod</span>   
-                                                  
-                                                          
-                                                </td>
-                                                <td>SARJANABKOKU12011</td>
-                                                <td>1/6/2022</td>
-                                                <td>4/7/2024</td>
-                                                <td> Aktif</td>
-                                                <td> <button type="button" class="btn btn-success ">Telah Dihantar</button></td>
-                                                <td>
-                                                    <a href="permohonan-baharui.html" class="btn btn-success"><i class="icon-check"></i> Menunggu Keputusan</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                </div>
+<div class="card">
+    <div class="card-header">
+       Sistem Integrasi
+    </div>
+    <div class="card-body">
+        <div class="row clearfix">
+        <div class="col-lg-12 col-md-12">
+            <div class="form-group c_form_group">
+                <label>Pilih Sistem</label>
+                <select class="form-control">
+                    <option value="">Pilih</option>
+                    <option value="AF" selected>SMOKU</option>
+                    <option value="AX">MyMoheS</option>
+                    <option value="AX">e-IPTS</option>
+                </select>
+            </div>
+            <br>
+            <button type="button" class="btn btn-success theme-bg gradient">Hantar</button>
+            <br>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered mb-5">
+                    <thead class="table-primary">
+                        <tr>
+                            <th style="width: 10px;">Bil</th>                                                        
+                            <th style="width: 30px; text-align: center">Nama Sistem</th>
+                            <th style="width: 80px;">Semakan (patch) </th>
+                            <th style="width: 80px;">Tarikh & Masa Kemaskini</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span>SMOKU</span>
+                            </td>   
+                            <td>
+                                <span>Updated versi 12.0.0</span> 
+                            </td>   
+                            <td>
+                                <span>6:40 AM 12/07/2023</span>
+                            </td>     
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <span>SMOKU</span>
+                            </td>   
+                            <td>
+                                <span>Updated versi 12.0.1.0</span> 
+                            </td>   
+                            <td>
+                                <span>7:40 AM 12/07/2023</span>
+                            </td>     
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        
+        </div>
     </div>
 </div>
-
-<!-- Javascript -->
 <script src="assets/bundles/libscripts.bundle.js"></script>    
 <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
 <!-- Vedor js file and create bundle with grunt  --> 
-<script src="assets/bundles/flotscripts.bundle.js"></script><!-- flot charts Plugin Js -->
-<script src="assets/bundles/c3.bundle.js"></script>
-<script src="assets/bundles/apexcharts.bundle.js"></script>
-<script src="assets/bundles/jvectormap.bundle.js"></script>
-<script src="assets/vendor/toastr/toastr.js"></script>
 <script src="assets/bundles/chartist.bundle.js"></script>
+<script src="assets/bundles/knob.bundle.js"></script><!-- Jquery Knob-->
+<script src="assets/bundles/c3.bundle.js"></script>
+
+
 <!-- Project core js file minify with grunt --> 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
-
-
-
-
-<!-- Vedor js file and create bundle with grunt  --> 
-
-<script src="assets/bundles/datatablescripts.bundle.js"></script>
-<script src="assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
-<script src="assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
-<script src="assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
-<script src="assets/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
-<script src="assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
-<script src="assets/vendor/sweetalert/sweetalert.min.js"></script><!-- SweetAlert Plugin Js --> 
-
-<script src="../js/pages/forms/form-wizard.js"></script>
-<script src="../js/pages/tables/jquery-datatable.js"></script>
-<script src="../js/pages/charts/c3.js"></script>
-<script src="../js/pages/charts/chartjs.js"></script>
+<script src="../js/pages/widgets.js"></script>
 </body>
 </html>

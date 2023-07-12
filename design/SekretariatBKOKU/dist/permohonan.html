@@ -205,11 +205,13 @@
                         <li class="active"><a href="permohonan.html"><i class="fa fa-files-o"></i> <span>Status Permohonan</span></a></li>
                         <li><a href="saring-permohonan.html"><i class="fa fa-folder-o"></i> <span>Saring Permohonan</span></a></li>
                         <li><a href="sahkan-permohonan.html"><i class="fa fa-check-circle-o"></i> <span>Pengesahan Permohonan</span></a></li>
+                        <li><a href="kptsn-mohon.html"><i class="fa fa-list-alt"></i> <span>Keputusan Permohonan</span></a></li> 
                         <li><a href="kembali-permohonan.html"><i class="fa fa-mail-reply"></i> <span>Kembalikan Permohonan</span></a></li>
                         <li class="header">Tuntutan</li>
                         <li><a href="tuntutan.html"><i class="fa fa-money"></i> <span>Status Tuntutan</span></a></li>
                         <li><a href="saring-tuntutan.html"><i class="fa fa-file-o"></i> <span>Saring Tuntutan</span></a></li>
                         <li><a href="sahkan-tuntutan.html"><i class="fa fa-check-square"></i> <span>Pengesahan Tuntutan</span></a></li>
+                        <li><a href="kptsn-tuntut.html"><i class="fa fa-list-alt"></i> <span>Keputusan Tuntutan</span></a></li>
                         <li><a href="kembali-tuntutan.html"><i class="fa fa-mail-reply-all"></i> <span>Kembalikan Tuntutan</span></a></li>
                         <li class="header">Laporan</li>
                         <li><a href="laporan.html"><i class="fa fa-list-alt"></i> <span>Laporan</span></a></li>
@@ -231,7 +233,7 @@
                     </div>
                 </div>        
                 <div class="row clearfix">
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card">
                             <div class="header">
                                 <h2>Jumlah Keseluruhan Permohonan</h2>
@@ -248,206 +250,151 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label class="d-block">Draf Permohonan<span class="float-right">1900</span></label>
+                                
+                                    <div class="card">
+                                        <div class="body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">Draf<span>14</span></li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">Baru<span>200</span></li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">Saringan<span>1000</span></li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">Dikembalikan<span>4</span></li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">Disokong<span>2000</span></li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">Layak<span>3277</span></li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">Tidak Layak<span>2</span></li>
+                                            </ul>
+                                       
                                     
-                                </div>
-                                <div class="form-group">
-                                    <label class="d-block">Permohonan Baru<span class="float-right">2378</span></label>
-                                    
-                                </div>
-                                <div class="form-group">
-                                    <label class="d-block">Layak Memohon <span class="float-right">1000</span></label>
-                                    
-                                </div>
-                                <div class="form-group">
-                                    <label class="d-block">Tidak Layak Memohon <span class="float-right">778</span></label>
-                                    
-                                </div>
+                                    </div>
+                                      
+                                    </div>
                                 
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>Permohonan BKOKU</h2>
-                        </div>
-                        <div class="body">
-                            <div id="chart-donut-BKOKU" style="height: 300px"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>Permohonan PPK</h2>
-                        </div>
-                        <div class="body">
-                            <div id="chart-donut-PPK" style="height: 300px"></div>
-                        </div>
-                    </div>
-                </div>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="header">
-                                    <h2>Keseluruhan Permohonan</h2>
-                                </div>
-                                <div class="body">
-                                    <div class="row clearfix">
-                                        <div class="col-lg-3 col-md-6">
-                                                <div class="s_detail">
-                                                    <h2 class="font700 mb-0">Permohonan Aktif (BKOKU)</h2>
-                                                    <span>1200 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="w_summary">
-                                                <div class="s_detail">
-                                                    <h2 class="font700 mb-0">Permohonan Tidak Aktif (BKOKU)</h2>
-                                                    <span>900</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
                     
-                                                <div class="s_detail">
-                                                    <h2 class="font700 mb-0">Permohonan Aktif (PPK)</h2>
-                                                    <span>1000</span>
-                                                </div>
-                                            
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="s_detail">
-                                                <h2 class="font700 mb-0">Permohonan Tidak Aktif (PPK)</h2>
-                                                <span>1000</span>
+                    
+                   <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Kategori Permohonan</h2>
+                        </div>
+                        <div class="body">
+                            <ul class="nav nav-tabs2">
+                                <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#Home-new">BKOKU</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Profile-new">PPK</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane show vivify flipInX active" id="Home-new">
+                                    <br>
+                                    <h6>Permohonan BKOKU</h6>
+                                    <div class="row clearfix">
+                                        <div class="col-lg-12 col-md-12">
+                                        <div class="card">
+                                            <div class="body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Draf<span class="badge badge-default">14</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Baru<span class="badge badge-primary">2</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Saringan<span class="badge badge-info">1900</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Dikembalikan<span class="badge badge-warning">1400</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Disokong<span class="badge badge-success">2000</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Layak<span class="badge badge-success">1400</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Tidak Layak<span class="badge badge-danger">2</span></li>
+                                                </ul>
                                             </div>
+                                        </div>
                                         
-                                        </div>                            
+                                        </div>
+                                          
+                                        </div>
+                                  
+                                </div>    
+                                
+                               
+                                <div class="tab-pane vivify flipInX" id="Profile-new">
+                                    <br>
+                                    <h6>Permohonan Program Pendidikan Khas (PPK)</h6>
+                                    <div class="row clearfix">
+                                        <div class="col-lg-12 col-md-12">
+                                        <div class="card">
+                                            <div class="body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Draf<span class="badge badge-default">11</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Baru<span class="badge badge-primary">2</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Saringan<span class="badge badge-info">1000</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Dikembalikan<span class="badge badge-warning">12</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Disokong<span class="badge badge-success">3000</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Layak<span class="badge badge-success">1000</span></li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">Tidak Layak<span class="badge badge-danger">2</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>
+                                          
+                                        </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                
+                    <div class="row clearfix">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body top_counter">
+                                    <div class="icon bg-success text-white"><i class="fa fa-check-circle-o"></i> </div>
+                                    <div class="content">
+                                        <span style="font-size:small;">Permohonan Aktif(BKOKU)</span>
+                                        <h5 class="number mb-0">2000</h5>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body top_counter">
+                                    <div class="icon bg-danger text-white"><i class="fa fa-times"></i> </div>
+                                    <div class="content">
+                                        <span style="font-size:small;">Permohonan Tidak Aktif(BKOKU)</span>
+                                        <h5 class="number mb-0">25</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body top_counter">
+                                    <div class="icon bg-success text-white"><i class="fa fa-check-circle-o"></i> </div>
+                                    <div class="content">
+                                        <span style="font-size:small;">Permohonan Aktif(PPK)</span>
+                                        <h5 class="number mb-0">1200</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body top_counter">
+                                    <div class="icon bg-danger text-white"><i class="fa fa-times"></i> </div>
+                                    <div class="content">
+                                        <span style="font-size:small;">Permohonan Tidak Aktif(PPK)</span>
+                                        <h5 class="number mb-0">54</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
-               
-
-                <!--<div class="row clearfix">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light page_menu">
-                            <a class="navbar-brand" href="#">M.</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fa fa-bars text-muted"></i>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item vivify swoopInTop delay-150 active"><a class="nav-link" href="page-invoices.html">Senarai Permohonan</a></li>
-                                   
-                                </ul>
-                                
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="body">
-                                <div class="table-responsive invoice_list">
-                                    <table class="table table-hover js-basic-example dataTable">
-                                        <thead>
-                                            <tr> 
-                                                <th style="width: 20px;">Bil</th>
-                                                <th>Nama Pemohon</th>
-                                                <th>Jenis Permohonan</th>
-                                                <th>ID Permohonan</th>  
-                                                <th>Status Permohonan</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <span>01</span>
-                                                </td>
-                                                <td>
-                                                    <span>Ali Bin Abu</span>
-                                                     
-                                                           
-                                                                                          
-                                                </td>
-                                                <td> BKOKU</td>
-                                                <td><a href="maklumat-pemohon.html" title="">SARJANABKOKU000011</a></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-danger">Tidak Layak Permohonan</button>   
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span>02</span>
-                                                </td>
-                                                <td>
-                                                    
-                                                            <span>Ramli Bin Nasir</span>
-                                                         
-                                                           
-                                                                                    
-                                                </td>
-                                                <td>PPK</td>
-                                                <td><a href="maklumat-pemohon.html" title="">SARJANAPPK000011</a></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-success">Layak Permohonan</button>   
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span>03</span>
-                                                </td>
-                                                <td>
-                                                   
-                                                            <span>Hashim Bin Mukriz</span>
-                                                         
-                                                           
-                                                                                           
-                                                </td>
-                                                <td> BKOKU</td>
-                                                <td><a href="maklumat-pemohon.html" title="">DIPLOMAPPK00011</a></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-warning"> Pengesahan</button>   
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span>04</span>
-                                                </td>
-                                                <td>
-                                                   
-                                                            <span>Ganesh A/L Hariyaran</span>
-                                                         
-                                                                                        
-                                                </td>
-                                                <td> PPK</td>
-                                                <td><a href="maklumat-pemohon.html" title="">SARJANAPPK00211</a></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-primary"> Permohonan Dikembalikan</button>   
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <div class="row clearfix">
+                <br>
+                    <div class="row clearfix">
                         <div class="col-lg-4 col-md-12 col-sm-12">
                             <h4>Keseluruhan status Permohonan</h4>
                           
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12 text-lg-right">
                             <button type="button" class="btn btn-default btn-filter" data-target="all">Semua</button>
-                            <button type="button" class="btn btn-light btn-filter" data-target="Deraf">Deraf</button>
+                            <button type="button" class="btn btn-primary btn-filter" data-target="Baru">Baru</button>
+
                             <button type="button" class="btn btn-info btn-filter" data-target="Saringan">Saringan</button>
                             <button type="button" class="btn btn-secondary btn-filter" data-target="Disokong">Disokong</button>
                             <button type="button" class="btn btn-success btn-filter" data-target="Layak">Layak</button>
@@ -638,7 +585,7 @@
                                             <td>Tidak Layak</td>
                                         </tr>
                                         
-                                        <tr data-status="Deraf">
+                                        <tr data-status="Baru">
                                             <td>
                                                 Chai Jing Si
                                             </td>
@@ -649,10 +596,10 @@
                                                SARJANABKOKU22012
                                             </td>
                                             
-                                            <td>Deraf</td>
+                                            <td>Baru</td>
                                         </tr>
                                         
-                                        <tr data-status="Deraf">
+                                        <tr data-status="Baru">
                                             <td>
                                                Norhayati Binti Sam
                                             </td>
@@ -663,7 +610,7 @@
                                                SARJANABKOKU09012
                                             </td>
                                             
-                                            <td>Deraf</td>
+                                            <td>Baru</td>
                                         </tr>
                                         
                                         <tr data-status="Disokong">
@@ -805,9 +752,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
         
+    </div>
+
     </div>
 </div>
 

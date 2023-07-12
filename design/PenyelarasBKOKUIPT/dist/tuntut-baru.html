@@ -438,54 +438,68 @@
                             <h1>Tuntutan Baru</h1>
                           
                         </div>
-                        <div class="col-lg-8 col-md-12 col-sm-12 text-right">
-                            <div class="body">
-                                <button type="button" class="btn btn-success btn-round" data-toggle="modal" data-target=".launch-pricing-modal">Tambah Pelajar</button> <!-- launch-pricing -->
-                                <div class="modal fade launch-pricing-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">                                            
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            </div>
-                                            <div class="modal-body pricing_page text-center pt-4 mb-4">
-                                                    <div class="col-lg-12">
-                                                        <div class="card">
-                                                            <div class="header">
-                                                                <h2>Maklumat Pelajar</h2>
-                                                            </div>
-                                                            <div class="body">
-                                                                <div class="form-group c_form_group">
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-prepend">
-                                                                            <span class="input-group-text">Nama</span>
-                                                                        </div>
-                                                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group c_form_group">
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-prepend">
-                                                                            <span class="input-group-text">No.Pendaftaran Pelajar/ No.Kad Matrik</span>
-                                                                        </div>
-                                                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                                                                    </div>
-                                                                </div>
-                                            
-                                                </div> 
-                                                        </div>
-                                                   </div>
-                                
-                                                <div class="col-12">
-                                                    
-                                                    <a href="mohon-baru.html"  class="btn btn-success btn-round">Hantar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div></div>
-                        </div>
+                      
                     </div>
                     <br>
+                    <br>
+                    <div class="row clearfix">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Jumlah Keseluruhan Permohonan</h2>
+                            </div>
+                            <div class="body">
+                                <div id="chart-pie" style="height: 380px"></div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Jumlah Keseluruhan Tuntutan Terkini</h2>
+                                <!--<small class="text-muted">Sales Performance for Online and Offline Revenue <a href="">Learn more</a></small>-->
+                                <ul class="header-dropdown dropdown">
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="d-flex flex-row">
+                                    <div class="pb-3">
+                                        <h5 class="mb-0">50</h5>
+                                        <small class="text-muted font-11">Jumlah Permohonan</small>
+                                    </div>
+                                    <div class="pb-3 pl-4 pr-4">
+                                        <h5 class="mb-0">45</h5>
+                                        <small class="text-muted font-11">Permohonan Aktif</small>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h5 class="mb-0">48</h5>
+                                        <small class="text-muted font-11">Permohonan Tidak Aktif</small>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <select class="form-control">
+                                            <option selected="selected">Bulan</option>
+                                            <option>Hari</option>
+                                            <option>Tahun</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="bar-chart" style="height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                     <div class="row clearfix">
                         <div class="col-12">
                             <nav class="navbar navbar-expand-lg navbar-light bg-light page_menu">
@@ -506,14 +520,15 @@
                             <div class="card">
                                 <div class="body">
                                     <div class="table-responsive invoice_list">
-                                        <table class="table table-hover js-basic-example dataTable">
+                                        <table class="table table-striped table-hover dataTable js-exportable">
                                             <thead>
                                                 <tr> 
-                                                    <th style="width: 20px;">Bil</th>
+                                                    <th>Bil</th>
                                                     <th>Nama Pelajar</th>
-                                                    <th style="width: 120px;">Kad Pendaftaran Pelajar/ Kad Matrik</th>
-                                                    <th style="width: 80px;">Status Tuntutan</th>
-                                                    <th style="width: 100px;">Tindakan</th>
+                                                    <th>Status Permohonan</th>
+                                                    <th>ID Tuntutan</th>
+                                                    <th>Status Tuntutan</th>
+                                                    <th>Tindakan</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -523,14 +538,20 @@
                                                     </td>
                                                     <td>
                                                         
-                                                                <a href="maklumat-pemohon.html" title="">Ali Bin Abu</a>
+                                                                <span>Ali Bin Abu</span>
                                                             
                                                                                                 
                                                     </td>
-                                                    <td>BKOKU</td>
-                                                    <td> <button type="button" class="btn btn-info ">Belum Memohon</button></td>
+                                                    <td>Aktif</td>
                                                     <td>
-                                                        <a href="permohonan-baru.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Mohon</a>
+                                                        
+                                                        <a href="tuntut-Ali.html" title="">TTBKOKU00012</a>
+                                                    
+                                                                                        
+                                                  </td>
+                                                    <td> <button type="button" class="btn btn-success ">Aktif </button></td>
+                                                    <td>
+                                                        <a href="tuntut-Ali.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Tuntutan</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -538,42 +559,38 @@
                                                         <span>02</span>
                                                     </td>
                                                     <td>
-                                                                <a href="maklumat-pemohon.html" title="">Zoe Baker</a>
+                                                                <span>Zoe Baker</span>
                                                             </div>
                                                         </div>                                        
                                                     </td>
-                                                    <td>BKOKU</td>
-                                                    <td> <button type="button" class="btn btn-default ">Deraf</button></td>
+                                                    <td>Tidak Aktif</td>
                                                     <td>
-                                                        <a href="permohonan-baru.html" class="btn btn-primary btn-round"><i class="icon-pencil"></i> Edit</a>
+                                                        
+                                                        <a href="#" title="">TTBKOKU00012</a>
+                                                    
+                                                                                        
+                                                  </td>
+                                                    <td> <button type="button" class="btn btn-danger ">Tidak Aktif</button></td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-danger"><i class="icon-close"></i> Tamat</a>
                                                     </td>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <td>
                                                         <span>03</span>
                                                     </td>
                                                     <td>                                     
-                                                                <a href="maklumat-pemohon.html" title="">Sarah Binti Hashim</a>                                     
+                                                                <span>Sarah Binti Hashim</span>                                     
                                                     </td>
-                                                    <td>BKOKU</td>
-                                                    <td> <button type="button" class="btn btn-info ">Belum Memohon</button></td>
-                                                    <td>
-                                                        <a href="permohonan-baru.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Mohon</a>
+                                                    <td>                                     
+                                                        <span>Aktif</span>                                     
+                                            </td>
+                                                    <td> <a href="#" title="">TTBKOKU02012</a>
                                                     </td>
-                                                </tr>
-                                                <tr>
+                                                    <td> <button type="button" class="btn btn-success ">Aktif</button></td>
                                                     <td>
-                                                        <span>04</span>
-                                                    </td>
-                                                    <td>
-                                                      
-                                                                <a href="maklumat-pemohon.html" title="">Akmal Bin Mahmod</a>
-                                                              
-                                                    </td>
-                                                    <td>BKOKU</td>
-                                                    <td> <button type="button" class="btn btn-info ">Belum Memohon</button></td>
-                                                    <td>
-                                                        <a href="permohonan-baru.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Mohon</a>
+                                                        <a href="tuntut-Ali.html" class="btn btn-warning btn-round"><i class="icon-plus"></i> Tuntutan</a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -593,7 +610,7 @@
 <!-- Javascript -->
 <script src="assets/bundles/libscripts.bundle.js"></script>    
 <script src="assets/bundles/vendorscripts.bundle.js"></script>
-
+<script src="assets/bundles/chartist.bundle.js"></script>
 <!-- Vedor js file and create bundle with grunt  --> 
 <script src="assets/bundles/flotscripts.bundle.js"></script><!-- flot charts Plugin Js -->
 <script src="assets/bundles/c3.bundle.js"></script>
@@ -619,5 +636,10 @@
 
 <script src="../js/pages/forms/form-wizard.js"></script>
 <script src="../js/pages/tables/jquery-datatable.js"></script>
+<script src="../js/pages/charts/c3.js"></script>
+<script src="../js/pages/charts/chartjs.js"></script>
 </body>
 </html>
+
+
+
