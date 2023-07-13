@@ -1266,21 +1266,18 @@ $(document).ready(function() {
             colors: ['transparent']
         },
         series: [{
-            name: 'Net Profit',
-            data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+            name: 'Lelaki',
+            data: [44, 55, 57, 56, 61, 58, 63, 60, 66, 78, 12, 98, 34, 23]
         }, {
-            name: 'Revenue',
-            data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-        }, {
-            name: 'Free Cash Flow',
-            data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+            name: 'Perempuan',
+            data: [76, 85, 101, 98, 87, 105, 91, 114, 94, 12, 34, 61, 56, 34]
         }],
         xaxis: {
-            categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+            categories: ['Pahang', 'Perak', 'Terengganu', 'Perlis', 'Selangor', 'Negeri Sembilan', 'Johor', 'Kelantan', 'Kedah', 'Pulau Pinang', 'Melaka', 'Sabah','Sarawak','Wilayah Persekutuan'],
         },
         yaxis: {
             title: {
-                text: '$ (thousands)'
+                text: 'Bilangan'
             }
         },
         fill: {
@@ -1290,7 +1287,7 @@ $(document).ready(function() {
         tooltip: {
             y: {
                 formatter: function (val) {
-                    return "$ " + val + " thousands"
+                    return  + val +
                 }
             }
         }
