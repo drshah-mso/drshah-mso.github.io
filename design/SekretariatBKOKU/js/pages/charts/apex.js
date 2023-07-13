@@ -1249,7 +1249,7 @@ $(document).ready(function() {
             height: 350,
             type: 'bar',
         },
-        colors: ['#1b6079', '#fed284', '#868e96'],
+        colors: ['#1b6079', '#fed284'],
         plotOptions: {
             bar: {
                 horizontal: false,
