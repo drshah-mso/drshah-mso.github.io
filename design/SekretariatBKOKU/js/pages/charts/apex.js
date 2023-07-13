@@ -1284,13 +1284,7 @@ $(document).ready(function() {
             opacity: 1
 
         },
-        tooltip: {
-            y: {
-                formatter: function (val) {
-                    return  + val +
-                }
-            }
-        }
+       
     }
 
     var chart = new ApexCharts(
